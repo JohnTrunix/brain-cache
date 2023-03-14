@@ -16,6 +16,8 @@ theme:
     icon:
         logo: material/library-outline
         repo: fontawesome/brands/github
+        view: octicons/file-code-16
+
         admonition:
             note: octicons/tag-16
             abstract: octicons/checklist-16
@@ -31,13 +33,15 @@ theme:
             quote: octicons/quote-16
 
     font:
-        text: Fira Code
+        text: Roboto
         code: Fira Code
 
     palette:
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
-          scheme: indigo
+          scheme: default
+          primary: indigo
+          accent: indigo
           toggle:
               icon: material/brightness-6
               name: Switch to dark mode
@@ -45,6 +49,8 @@ theme:
         # Palette toggle for dark mode
         - media: "(prefers-color-scheme: dark)"
           scheme: slate
+          primary: indigo
+          accent: indigo
           toggle:
               icon: material/brightness-6
               name: Switch to light mode
@@ -60,7 +66,7 @@ theme:
         - search.suggest
         - search.share
         - content.action.view
-        - content.action.edit
+        #- content.action.edit
         - content.code.copy
 
 extra_css:
@@ -91,6 +97,7 @@ plugins:
 
 markdown_extensions:
     - attr_list
+    - def_list
     - markdown.extensions.admonition
     - markdown.extensions.footnotes
     - markdown.extensions.toc:
@@ -118,6 +125,7 @@ markdown_extensions:
 nav:
     - Overview:
           - index.md
-          - Links & Resources: urls-resources.md
+          - Ideas & Upcoming Projects: overview/ideas-upcoming-projects.md
+          - Links & Resources: overview/urls-resources.md
     - Genral Notes:
           - MkDocs Material: general-notes/mkdocs-material.md

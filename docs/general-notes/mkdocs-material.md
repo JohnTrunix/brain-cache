@@ -1,24 +1,21 @@
 # MkDocs Material
 
-!!! info "Info"
+Is a theme for MkDocs that provides a clean and responsive design. It is based on the Material Design guidelines by Google. MkDocs is a static site generator that is geared towards building project documentation. It is written in Python and uses Markdown to create pages.
 
-    - [MkDocs Material Setup](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
-    - [MkDocs Material Reference](https://squidfunk.github.io/mkdocs-material/reference/)
+!!! note "Info"
+
+    - [MkDocs Material Setup](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/){target=\_blank}
+    - [MkDocs Material Reference](https://squidfunk.github.io/mkdocs-material/reference/){target=\_blank}
 
     Are pretty good resources for learning how to use MkDocs and MkDocs Material.
 
 ## Admonitions
-
-<details>
-    <summary>Code</summary>
 
 ```markdown
 !!! tip "Title"
 
     Some content
 ```
-
-</details>
 
 !!! tip "Title"
 

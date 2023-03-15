@@ -13,7 +13,7 @@ virtualenv env --python=3.10
 Activate virtual environment
 
 ```bash
-source env/bin/activate
+env/bin/activate
 ```
 
 Install dependencies

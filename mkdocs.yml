@@ -107,8 +107,7 @@ extra:
 copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
-    - social:
-          cards: !ENV [CARDS, true]
+    - social
     - tags
     - search:
           lang:

@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
     name: material
+    custom_dir: overrides
     language: en
     favicon: images/favicon.svg
 
@@ -84,6 +85,9 @@ extra:
           link: https://github.com/JohnTrunix/
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/in/john-truninger/
+    analytics:
+        provider: google
+        property: G-3CJRRQT0L2
 
 copyright: Copyright &copy; 2023 JohnTrunix
 

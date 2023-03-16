@@ -10,7 +10,7 @@ edit_uri: edit/main/docs/
 
 theme:
     name: material
-    custom_dir: overrides
+    #custom_dir: overrides
     language: en
     favicon: images/favicon.svg
 

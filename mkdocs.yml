@@ -71,11 +71,11 @@ theme:
         - content.code.copy
 
 extra_css:
-    - extra/tweaks.css
+    - assets/css/tweaks.css
 
 extra_javascript:
     - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
-    - extra/mathjax.js
+    - assets/js/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -107,8 +107,9 @@ extra:
 copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
-    #- social:
-    #      cards_dir: assets
+    - social:
+          cards: !ENV [CARDS, true]
+          cards_dir: assets/cards
     - tags
     - search:
           lang:

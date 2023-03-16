@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ### Social Cards Requirements
 
 -   [Documentation Social Cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)
--   [MSYS2 Installation](https://www.gtk.org/docs/installations/windows/)
+-   [GTK Release](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
 
 ### Serving
 

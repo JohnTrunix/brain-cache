@@ -85,6 +85,8 @@ extra:
           link: https://github.com/JohnTrunix/
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/in/john-truninger/
+        - icon: simple/kofi
+          link: https://ko-fi.com/johntrunix
     analytics:
         provider: google
         property: G-3CJRRQT0L2

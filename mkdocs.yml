@@ -109,7 +109,6 @@ copyright: Copyright &copy; 2023 JohnTrunix
 plugins:
     - social:
           cards: !ENV [CARDS, true]
-          cards_dir: assets/cards
     - tags
     - search:
           lang:

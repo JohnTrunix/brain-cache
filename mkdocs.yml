@@ -12,10 +12,10 @@ theme:
     name: material
     #custom_dir: overrides
     language: en
-    favicon: images/favicon.svg
+    logo: assets/rocket.png
+    favicon: assets/favicon.ico
 
     icon:
-        logo: material/library-outline
         repo: fontawesome/brands/github
         view: octicons/file-code-16
 
@@ -75,9 +75,9 @@ extra_css:
 
 extra_javascript:
     - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
+    - extra/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    - extra/mathjax.js
 
 extra:
     social:
@@ -89,12 +89,26 @@ extra:
           link: https://ko-fi.com/johntrunix
     analytics:
         provider: google
-        property: G-3CJRRQT0L2
+        property: G-KY2RP9BZ91
+        feedback:
+            title: Was this page helpful?
+            ratings:
+                - icon: octicons/heart-16
+                  name: This page was helpful
+                  data: 1
+                  note: >-
+                      Thanks for your feedback!
+                - icon: octicons/x-16
+                  name: This page could be improved
+                  data: 0
+                  note: >-
+                      Sorry to hear that. Can you give me some suggestions for improvement?
 
 copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
-    #- social
+    #- social:
+    #      cards_dir: assets
     - tags
     - search:
           lang:

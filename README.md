@@ -22,6 +22,11 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+### Social Cards Requirements
+
+-   [Documentation Social Cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)
+-   [MSYS2 Installation](https://www.gtk.org/docs/installations/windows/)
+
 ### Serving
 
 ```bash

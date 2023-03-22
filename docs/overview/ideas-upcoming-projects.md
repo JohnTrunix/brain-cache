@@ -18,6 +18,7 @@
 | NN from Scratch     | Implementing a Neural Network from scratch in Python         | Machine Learning  | :octicons-issue-draft-16:{ .i_draft_c} |
 | Matrices            | Theory & Implementation of Matrices in Python                | Math              | :octicons-issue-draft-16:{ .i_draft_c} |
 | O(n)                | Big O Notation Theory and testing                            | Algorithms/Coding | :octicons-issue-draft-16:{ .i_draft_c} |
+| Graph Theory        | Theory & Implementation of Graph Theory in Python            | Algorithms/Coding | :octicons-issue-opened-16:{ .i_imp_c}  |
 
 <br>
 <center>

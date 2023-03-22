@@ -148,3 +148,7 @@ nav:
           - Links & Resources: overview/urls-resources.md
     - Genral Notes:
           - MkDocs Material: general-notes/mkdocs-material.md
+    - Algorithms & Data Structures:
+          - Graphs: algorithms/graphs.md
+    - Python:
+          - Pickle: python/pickle.md

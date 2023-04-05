@@ -126,9 +126,6 @@ markdown_extensions:
     - pymdownx.emoji:
           emoji_index: !!python/name:materialx.emoji.twemoji
           emoji_generator: !!python/name:materialx.emoji.to_svg
-    - pymdownx.highlight:
-          linenums: True
-          linenums_style: table
     - pymdownx.superfences:
           custom_fences:
               - name: mermaid
@@ -147,8 +144,13 @@ nav:
           - Ideas & Upcoming Projects: overview/ideas-upcoming-projects.md
           - Links & Resources: overview/urls-resources.md
     - Genral Notes:
+          - git: general-notes/git.md
           - MkDocs Material: general-notes/mkdocs-material.md
     - Algorithms & Data Structures:
           - Graphs: algorithms/graphs.md
-    - Python:
-          - Pickle: python/pickle.md
+    - Coding:
+          - Python:
+                - Pickle: python/pickle.md
+          - Go:
+                - Go Commands: golang/go-commands.md
+                - Go General: golang/go-general.md

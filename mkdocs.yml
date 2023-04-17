@@ -60,7 +60,8 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
-        - navigation.sections
+        #- navigation.sections
+        - navigation.expand
         - navigation.indexes
         - navigation.top
         - navigation.footer
@@ -107,6 +108,7 @@ extra:
 copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
+    # disable social for local builds
     - social
     - tags
     - search:
@@ -115,6 +117,9 @@ plugins:
               - de
 
 markdown_extensions:
+    - toc:
+          permalink: true
+
     - attr_list
     - def_list
     - markdown.extensions.admonition
@@ -150,7 +155,18 @@ nav:
           - Graphs: algorithms/graphs.md
     - Coding:
           - Python:
-                - Pickle: python/pickle.md
+                #- coding/python/index.md
+                - Pickle: coding/python/pickle.md
+          - Angular:
+                #- coding/angular/index.md
+                - Modules: coding/angular/modules.md
+                - Components: coding/angular/components.md
+                - Directives: coding/angular/directives.md
+                - Dependency Injection: coding/angular/dependency-injection.md
+                - Testing: coding/angular/testing.md
+                - First-party Libraries: coding/angular/angular-libraries.md
+
           - Go:
-                - Go Commands: golang/go-commands.md
-                - Go General: golang/go-general.md
+                - coding/golang/index.md
+                - Commands: coding/golang/commands.md
+                - Data Types: coding/golang/types.md

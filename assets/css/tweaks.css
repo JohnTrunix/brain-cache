@@ -1,0 +1,35 @@
+/* Change the width of the table to 100% */
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+/* margin enlargement for the icons in the feedback section */
+.md-feedback__icon {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+/* Ideas & Upcoming Projects Icon colors */
+
+.i_draft_c {
+    color: #795649;
+}
+
+.i_imp_c {
+    color: #2094f3;
+}
+
+.i_update_c {
+    color: #ffec3d;
+}
+
+.i_complete_c {
+    color: #68bb6c;
+}
+
+.i_rejected_c {
+    color: #ef5552;
+}

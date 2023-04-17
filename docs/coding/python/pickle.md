@@ -49,7 +49,7 @@ with open('person.pickle', 'rb') as f:
 
 !!! example "See also"
 
-    Example Notebook: [pickle.ipynb](../examples/python/pickles.ipynb)
+    Example Notebook: [pickle.ipynb](../../examples/python/pickles.ipynb)
 
 ## Multiple Objects
 

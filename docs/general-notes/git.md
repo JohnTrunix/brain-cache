@@ -14,12 +14,6 @@ Git is a version control system for tracking changes in computer files and coord
 git pull
 ```
 
-**Get latest changes from remote repository and merge them with local changes:**
-
-```bash
-git pull
-```
-
 !!! note
 
     Use `--rebase` flag to rebase local changes on top of remote changes.

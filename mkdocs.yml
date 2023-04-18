@@ -10,10 +10,10 @@ edit_uri: edit/main/docs/
 
 theme:
     name: material
-    #custom_dir: overrides
+    custom_dir: docs/.overrides
     language: en
-    logo: assets/rocket.png
-    favicon: assets/favicon.ico
+    logo: custom/rocket.png
+    favicon: custom/favicon.ico
 
     icon:
         repo: fontawesome/brands/github
@@ -72,11 +72,12 @@ theme:
         - content.code.copy
 
 extra_css:
-    - assets/css/tweaks.css
+    - custom/css/tweaks.css
+    - custom/css/source_metadata.css
 
 extra_javascript:
     - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
-    - assets/js/mathjax.js
+    - custom/js/mathjax.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
@@ -109,19 +110,26 @@ copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
     # disable social for local builds
-    - social
+    #- social
     - tags
     - search:
           lang:
               - en
               - de
+    - git-revision-date-localized:
+          type: timeago
+          enable_creation_date: true
+          fallback_to_build_date: true
+    - git-committers:
+          repository: johntrunix/brain-cache
+          branch: main
 
 markdown_extensions:
     - toc:
           permalink: true
-
     - attr_list
     - def_list
+    - md_in_html
     - markdown.extensions.admonition
     - markdown.extensions.footnotes
     - markdown.extensions.toc:
@@ -158,7 +166,7 @@ nav:
                 #- coding/python/index.md
                 - Pickle: coding/python/pickle.md
           - Angular:
-                #- coding/angular/index.md
+                - coding/angular/index.md
                 - Modules: coding/angular/modules.md
                 - Components: coding/angular/components.md
                 - Directives: coding/angular/directives.md

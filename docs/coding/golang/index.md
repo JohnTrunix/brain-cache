@@ -1,3 +1,8 @@
+---
+hide:
+    - toc
+---
+
 # Go
 
 Code Review Comments: [CodeReviewComments golang/go](https://github.com/golang/go/wiki/CodeReviewComments)

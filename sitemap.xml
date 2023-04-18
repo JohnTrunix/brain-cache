@@ -66,6 +66,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/typing/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/fastapi/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/fastapi/parameter/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/fastapi/request-body/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://johntrunix.github.io/brain-cache/general-notes/git/</loc>
          <lastmod>2023-04-18</lastmod>
          <changefreq>daily</changefreq>

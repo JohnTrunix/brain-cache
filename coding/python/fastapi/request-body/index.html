@@ -12,21 +12,27 @@
         <meta name="author" content="JohnTrunix">
       
       
+        <link rel="canonical" href="https://johntrunix.github.io/brain-cache/coding/python/fastapi/request-body/">
       
       
-      <link rel="icon" href="/brain-cache/custom/favicon.ico">
+        <link rel="prev" href="../parameter/">
+      
+      
+        <link rel="next" href="../../pickle/">
+      
+      <link rel="icon" href="../../../../custom/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>JohnTrunix's Brain Cache</title>
+        <title>Request Body - JohnTrunix's Brain Cache</title>
       
     
     
-      <link rel="stylesheet" href="/brain-cache/assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="/brain-cache/assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
   
@@ -83,13 +89,13 @@
       
     
     
-      <link rel="stylesheet" href="/brain-cache/css/timeago.css">
+      <link rel="stylesheet" href="../../../../css/timeago.css">
     
-      <link rel="stylesheet" href="/brain-cache/custom/css/tweaks.css">
+      <link rel="stylesheet" href="../../../../custom/css/tweaks.css">
     
-      <link rel="stylesheet" href="/brain-cache/custom/css/source_metadata.css">
+      <link rel="stylesheet" href="../../../../custom/css/source_metadata.css">
     
-    <script>__md_scope=new URL("/brain-cache/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -106,6 +112,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Request Body - JohnTrunix's Brain Cache" >
+      
+        <meta  property="og:description"  content="JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy personal notes and insights" >
+      
+        <meta  property="og:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/coding/python/fastapi/request-body.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://johntrunix.github.io/brain-cache/coding/python/fastapi/request-body/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Request Body - JohnTrunix's Brain Cache" >
+      
+        <meta  name="twitter:description"  content="JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy personal notes and insights" >
+      
+        <meta  name="twitter:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/coding/python/fastapi/request-body.png" >
+      
     
     
   </head>
@@ -129,6 +161,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#fast-api-request-body" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -139,9 +176,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/brain-cache/." title="JohnTrunix&#39;s Brain Cache" class="md-header__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
+    <a href="../../../.." title="JohnTrunix&#39;s Brain Cache" class="md-header__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
       
-  <img src="/brain-cache/custom/rocket.png" alt="logo">
+  <img src="../../../../custom/rocket.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -157,7 +194,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Request Body
             
           </span>
         </div>
@@ -261,7 +298,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/brain-cache/." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         Overview
       </a>
     </li>
@@ -277,7 +314,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/brain-cache/general-notes/git/" class="md-tabs__link">
+      <a href="../../../../general-notes/git/" class="md-tabs__link">
         Genral Notes
       </a>
     </li>
@@ -293,7 +330,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/brain-cache/algorithms/graphs/" class="md-tabs__link">
+      <a href="../../../../algorithms/graphs/" class="md-tabs__link">
         Algorithms & Data Structures
       </a>
     </li>
@@ -302,6 +339,8 @@
       
         
   
+  
+    
   
 
 
@@ -314,7 +353,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/brain-cache/coding/python/typing/" class="md-tabs__link">
+      <a href="../../typing/" class="md-tabs__link md-tabs__link--active">
         Coding
       </a>
     </li>
@@ -344,9 +383,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/brain-cache/." title="JohnTrunix&#39;s Brain Cache" class="md-nav__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
+    <a href="../../../.." title="JohnTrunix&#39;s Brain Cache" class="md-nav__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
       
-  <img src="/brain-cache/custom/rocket.png" alt="logo">
+  <img src="../../../../custom/rocket.png" alt="logo">
 
     </a>
     JohnTrunix's Brain Cache
@@ -398,7 +437,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/brain-cache/.">Overview</a>
+          <a href="../../../..">Overview</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -421,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/overview/ideas-upcoming-projects/" class="md-nav__link">
+      <a href="../../../../overview/ideas-upcoming-projects/" class="md-nav__link">
         Ideas & Upcoming Projects
       </a>
     </li>
@@ -435,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/overview/urls-resources/" class="md-nav__link">
+      <a href="../../../../overview/urls-resources/" class="md-nav__link">
         Links & Resources
       </a>
     </li>
@@ -492,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/general-notes/git/" class="md-nav__link">
+      <a href="../../../../general-notes/git/" class="md-nav__link">
         git
       </a>
     </li>
@@ -506,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/general-notes/mkdocs-material/" class="md-nav__link">
+      <a href="../../../../general-notes/mkdocs-material/" class="md-nav__link">
         MkDocs Material
       </a>
     </li>
@@ -561,7 +600,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/algorithms/graphs/" class="md-nav__link">
+      <a href="../../../../algorithms/graphs/" class="md-nav__link">
         Graphs
       </a>
     </li>
@@ -581,16 +620,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
         
@@ -607,7 +646,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Coding
@@ -618,16 +657,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
       
       
         
@@ -644,7 +683,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4_1">
           <span class="md-nav__icon md-icon"></span>
           Python
@@ -657,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/python/typing/" class="md-nav__link">
+      <a href="../../typing/" class="md-nav__link">
         Typing
       </a>
     </li>
@@ -669,16 +708,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_2" checked>
       
       
         
@@ -695,7 +734,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/brain-cache/coding/python/fastapi/">FastAPI</a>
+          <a href="../">FastAPI</a>
           
             <label for="__nav_4_1_2">
               <span class="md-nav__icon md-icon"></span>
@@ -703,7 +742,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4_1_2">
           <span class="md-nav__icon md-icon"></span>
           FastAPI
@@ -718,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/python/fastapi/parameter/" class="md-nav__link">
+      <a href="../parameter/" class="md-nav__link">
         Parameter
       </a>
     </li>
@@ -730,11 +769,72 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/brain-cache/coding/python/fastapi/request-body/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Request Body
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Request Body
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datamodel-creation" class="md-nav__link">
+    Datamodel Creation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-model-usage" class="md-nav__link">
+    Data Model Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Model Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body-path-query-parameters" class="md-nav__link">
+    Request Body &amp; Path &amp; Query Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -753,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/python/pickle/" class="md-nav__link">
+      <a href="../../pickle/" class="md-nav__link">
         Pickle
       </a>
     </li>
@@ -806,7 +906,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/brain-cache/coding/angular/">Angular</a>
+          <a href="../../../angular/">Angular</a>
           
             <label for="__nav_4_2">
               <span class="md-nav__icon md-icon"></span>
@@ -829,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/angular/modules/" class="md-nav__link">
+      <a href="../../../angular/modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -843,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/angular/components/" class="md-nav__link">
+      <a href="../../../angular/components/" class="md-nav__link">
         Components
       </a>
     </li>
@@ -857,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/angular/directives/" class="md-nav__link">
+      <a href="../../../angular/directives/" class="md-nav__link">
         Directives
       </a>
     </li>
@@ -871,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/angular/dependency-injection/" class="md-nav__link">
+      <a href="../../../angular/dependency-injection/" class="md-nav__link">
         Dependency Injection
       </a>
     </li>
@@ -885,7 +985,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/angular/testing/" class="md-nav__link">
+      <a href="../../../angular/testing/" class="md-nav__link">
         Testing
       </a>
     </li>
@@ -899,7 +999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/angular/angular-libraries/" class="md-nav__link">
+      <a href="../../../angular/angular-libraries/" class="md-nav__link">
         First-party Libraries
       </a>
     </li>
@@ -944,7 +1044,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="/brain-cache/coding/golang/">Go</a>
+          <a href="../../../golang/">Go</a>
           
             <label for="__nav_4_3">
               <span class="md-nav__icon md-icon"></span>
@@ -967,7 +1067,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/golang/commands/" class="md-nav__link">
+      <a href="../../../golang/commands/" class="md-nav__link">
         Commands
       </a>
     </li>
@@ -981,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/brain-cache/coding/golang/types/" class="md-nav__link">
+      <a href="../../../golang/types/" class="md-nav__link">
         Data Types
       </a>
     </li>
@@ -1019,6 +1119,43 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#datamodel-creation" class="md-nav__link">
+    Datamodel Creation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-model-usage" class="md-nav__link">
+    Data Model Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Model Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request-body-path-query-parameters" class="md-nav__link">
+    Request Body &amp; Path &amp; Query Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1030,8 +1167,196 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
+  
 
+
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/JohnTrunix/brain-cache/raw/main/docs/coding/python/fastapi/request-body.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0Zm1.72 4.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.47-1.47-1.47-1.47a.75.75 0 0 1 0-1.06ZM3.28 7.78 1.81 9.25l1.47 1.47a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Zm8.22-6.218V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg>
+    </a>
+  
+
+
+<h1 id="fast-api-request-body">Fast API Request Body<a class="headerlink" href="#fast-api-request-body" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Sending data to server/client, the data is sent in the request body.</p>
+<ul>
+<li>API almost has to send response body.</li>
+<li>Client don't have to send often request body.</li>
+</ul>
+</div>
+<h2 id="datamodel-creation">Datamodel Creation<a class="headerlink" href="#datamodel-creation" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Datamodels are created with <code>pydantic</code> library.</p>
+<p>Same logic with <code>optional, default, required</code> parameters.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Backend gets POST request</label><label for="__tabbed_1_2">Result</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
+<span class="kn">from</span> <span class="nn">pydantic</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+
+<span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
+    <span class="n">tax</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">item</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><span class="filename">Response</span><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Foo&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;An optional description&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">45.2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;tax&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.5</span>
+<span class="p">},</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Foo&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;price&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">45.2</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="data-model-usage">Data Model Usage<a class="headerlink" href="#data-model-usage" title="Permanent link">&para;</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>Item</code> Datamodel dict can be updated with new key-value pairs.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
+    <span class="n">tax</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/items/&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">):</span>
+<span class="hll">    <span class="n">item_dict</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
+</span><span class="hll">    <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span><span class="p">:</span>
+</span><span class="hll">        <span class="n">price_with_tax</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">price</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">tax</span>
+</span><span class="hll">        <span class="n">item_dict</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;price_with_tax&quot;</span><span class="p">:</span> <span class="n">price_with_tax</span><span class="p">})</span>
+</span>    <span class="k">return</span> <span class="n">item_dict</span>
+</code></pre></div>
+<h3 id="request-body-path-query-parameters">Request Body &amp; Path &amp; Query Parameters<a class="headerlink" href="#request-body-path-query-parameters" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>FasAPI detects/defines all parameters name, also in Datamodels.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Item</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">price</span><span class="p">:</span> <span class="nb">float</span>
+    <span class="n">tax</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+
+<span class="hll"><span class="nd">@app</span><span class="o">.</span><span class="n">put</span><span class="p">(</span><span class="s2">&quot;/items/</span><span class="si">{item_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span class="hll"><span class="k">async</span> <span class="k">def</span> <span class="nf">create_item</span><span class="p">(</span><span class="n">item_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">item</span><span class="p">:</span> <span class="n">Item</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+</span>    <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;item_id&quot;</span><span class="p">:</span> <span class="n">item_id</span><span class="p">,</span> <span class="o">**</span><span class="n">item</span><span class="o">.</span><span class="n">dict</span><span class="p">()}</span>
+    <span class="k">if</span> <span class="n">q</span><span class="p">:</span>
+        <span class="n">result</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="n">q</span><span class="p">})</span>
+    <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+
+  
+
+<hr />
+<aside class="md-source-file">
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    
+    <span class="md-source-file__fact">
+        <span class="md-icon" title="Last update">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+        </span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-18T14:08:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-18</span> 
+    </span>
+    <span class="md-source-file__fact">
+        <span class="md-icon" title="Created">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+        </span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-18T14:08:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-18</span>
+    </span>
+      
+    <span class="md-source-file__fact">
+        <span class="md-icon" title="Contributors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+        </span>
+        <span>Authors: </span>
+        <nav><a
+                href="https://github.com/JohnTrunix"
+                title="JohnTrunix"
+                target="_blank"
+                class="md-author"
+                ><img src="https://avatars.githubusercontent.com/u/61423865" alt="JohnTrunix"
+            /></a></nav>
+    </span>
+    
+</aside>
+
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              Sorry to hear that. Can you give me some suggestions for improvement?
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
               </article>
             </div>
           
@@ -1047,6 +1372,42 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../parameter/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Parameter" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Parameter
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../pickle/" class="md-footer__link md-footer__link--next" aria-label="Next: Pickle" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Pickle
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1111,18 +1472,18 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/brain-cache/", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.share", "content.action.view", "content.code.copy"], "search": "/brain-cache/assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.share", "content.action.view", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/brain-cache/assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="/brain-cache/js/timeago.min.js"></script>
+        <script src="../../../../js/timeago.min.js"></script>
       
-        <script src="/brain-cache/js/timeago_mkdocs_material.js"></script>
+        <script src="../../../../js/timeago_mkdocs_material.js"></script>
       
         <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
       
-        <script src="/brain-cache/custom/js/mathjax.js"></script>
+        <script src="../../../../custom/js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

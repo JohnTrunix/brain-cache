@@ -20,4 +20,6 @@ It works with:
 Angular Concept of Modules, Components and Injectors[^2]
 
 [^1]: [Angular](https://angular.io/)
-[^2]: [Angular Concept](https://angular.io/guide/architecture)
+[^2]:
+    [Angular Concept](https://angular.io/guide/architecture)
+    s

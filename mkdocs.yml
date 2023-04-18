@@ -60,7 +60,7 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
-        #- navigation.sections
+        - navigation.sections
         - navigation.expand
         - navigation.indexes
         - navigation.top
@@ -109,7 +109,6 @@ extra:
 copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
-    # disable social for local builds
     - social:
           cards: !ENV [CARDS, False]
     - tags
@@ -159,31 +158,39 @@ nav:
           - index.md
           - Ideas & Upcoming Projects: overview/ideas-upcoming-projects.md
           - Links & Resources: overview/urls-resources.md
+
     - Genral Notes:
           - git: general-notes/git.md
           - MkDocs Material: general-notes/mkdocs-material.md
-    - Algorithms & Data Structures:
+
+    - Algo & DS:
           - Graphs: algorithms/graphs.md
-    - Coding:
-          - Python:
-                #- coding/python/index.md
-                - Typing: coding/python/typing.md
-                - FastAPI:
-                      - coding/python/fastapi/index.md
-                      - Parameter: coding/python/fastapi/parameter.md
-                      - Request Body: coding/python/fastapi/request-body.md
 
-                - Pickle: coding/python/pickle.md
-          - Angular:
-                - coding/angular/index.md
-                - Modules: coding/angular/modules.md
-                - Components: coding/angular/components.md
-                - Directives: coding/angular/directives.md
-                - Dependency Injection: coding/angular/dependency-injection.md
-                - Testing: coding/angular/testing.md
-                - First-party Libraries: coding/angular/angular-libraries.md
+    - Math:
+          - math/index.md
+          - Linear Algebra: math/linear-algebra.md
+          - Analysis: math/analysis.md
 
-          - Go:
-                - coding/golang/index.md
-                - Commands: coding/golang/commands.md
-                - Data Types: coding/golang/types.md
+    - Python:
+          - Pydantic:
+                - coding/python/pydantic/index.md
+          - FastAPI:
+                - coding/python/fastapi/index.md
+                - Parameter: coding/python/fastapi/parameter.md
+                - Request Body: coding/python/fastapi/request-body.md
+          - Typing: coding/python/typing.md
+          - Pickle: coding/python/pickle.md
+
+    - Angular:
+          - coding/angular/index.md
+          - Modules: coding/angular/modules.md
+          - Components: coding/angular/components.md
+          - Directives: coding/angular/directives.md
+          - Dependency Injection: coding/angular/dependency-injection.md
+          - Testing: coding/angular/testing.md
+          - First-party Libraries: coding/angular/angular-libraries.md
+
+    - Go:
+          - coding/golang/index.md
+          - Commands: coding/golang/commands.md
+          - Data Types: coding/golang/types.md

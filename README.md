@@ -1,6 +1,9 @@
-# brain-cache
+# :rocket: brain-cache
 
-JohnTrunix's Brain Cache
+![](https://img.shields.io/github/actions/workflow/status/JohnTrunix/brain-cache/ci.yml)
+![](https://img.shields.io/github/last-commit/JohnTrunix/brain-cache)
+![](https://img.shields.io/badge/mkdocs--material-v9.1.6-blue)
+![](https://img.shields.io/github/repo-size/JohnTrunix/brain-cache)
 
 ## Development
 

@@ -43,16 +43,6 @@ md-author::hover {
     transform: scale(1);
 }
 
-.md-typeset a.md-author img {
-    filter: grayscale(100%) opacity(75%);
-    transition: filter 125ms;
-}
-
-.md-typeset a.md-author:hover img,
-.md-typeset a.md-author:focus img {
-    filter: grayscale(0);
-}
-
 .md-source-file__fact .md-author {
     margin-right: 0.2rem;
 }

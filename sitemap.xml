@@ -86,12 +86,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/pydantic/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://johntrunix.github.io/brain-cache/general-notes/git/</loc>
          <lastmod>2023-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://johntrunix.github.io/brain-cache/general-notes/mkdocs-material/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/math/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/math/analysis/</loc>
+         <lastmod>2023-04-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/math/linear-algebra/</loc>
          <lastmod>2023-04-18</lastmod>
          <changefreq>daily</changefreq>
     </url>

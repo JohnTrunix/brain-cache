@@ -91,7 +91,7 @@ extra:
           link: https://ko-fi.com/johntrunix
     analytics:
         provider: google
-        property: G-KY2RP9BZ91
+        property: !ENV GOOGLE_ANALYTICS
         feedback:
             title: Was this page helpful?
             ratings:
@@ -110,7 +110,8 @@ copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
     # disable social for local builds
-    - social
+    - social:
+          cards: !ENV [CARDS, False]
     - tags
     - search:
           lang:
@@ -120,9 +121,11 @@ plugins:
           type: timeago
           enable_creation_date: true
           fallback_to_build_date: true
+          enabled: !ENV [GIT_REVISION_DATE, False]
     - git-committers:
           repository: johntrunix/brain-cache
           branch: main
+          enabled: !ENV [GIT_COMMITTERS, False]
 
 markdown_extensions:
     - toc:
@@ -164,6 +167,12 @@ nav:
     - Coding:
           - Python:
                 #- coding/python/index.md
+                - Typing: coding/python/typing.md
+                - FastAPI:
+                      - coding/python/fastapi/index.md
+                      - Parameter: coding/python/fastapi/parameter.md
+                      - Request Body: coding/python/fastapi/request-body.md
+
                 - Pickle: coding/python/pickle.md
           - Angular:
                 - coding/angular/index.md

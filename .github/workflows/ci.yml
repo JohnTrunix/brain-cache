@@ -10,9 +10,9 @@ jobs:
         runs-on: ubuntu-latest
         env:
             GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
-            CARDS: ${{ env.CARDS }}
-            GIT_COMMITTERS: ${{ env.GIT_COMMITTERS }}
-            GIT_REVISION_DATE: ${{ env.GIT_REVISION_DATE }}
+            CARDS: ${{ vars.CARDS }}
+            GIT_COMMITTERS: ${{ vars.GIT_COMMITTERS }}
+            GIT_REVISION_DATE: ${{ vars.GIT_REVISION_DATE }}
         steps:
             - uses: actions/checkout@v3
               with:

@@ -110,7 +110,7 @@ copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
     # disable social for local builds
-    #- social
+    - social
     - tags
     - search:
           lang:

@@ -1,0 +1,39 @@
+{% import "partials/language.html" as lang with context %}
+
+<hr />
+<aside class="md-source-file">
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    {% if page.meta.git_revision_date_localized %}
+    <span class="md-source-file__fact">
+        <span class="md-icon" title="Last update">
+            {% include ".icons/material/clock-edit-outline.svg" %}
+        </span>
+        {{ page.meta.git_revision_date_localized }} {% if
+        page.meta.git_creation_date_localized %}
+    </span>
+    <span class="md-source-file__fact">
+        <span class="md-icon" title="Created">
+            {% include ".icons/material/clock-plus-outline.svg" %}
+        </span>
+        {{ page.meta.git_creation_date_localized }}
+    </span>
+    {% endif %} {% endif %} {% if committers %}
+    <span class="md-source-file__fact">
+        <span class="md-icon" title="Contributors">
+            {% include ".icons/material/pencil.svg" %}
+        </span>
+        <span>Authors: </span>
+        <nav>
+            {%- for user in committers -%}
+            <a
+                href="{{ user.url }}"
+                title="{{ user.name }}"
+                target="_blank"
+                class="md-author"
+                ><img src="{{ user.avatar }}" alt="{{ user.name }}"
+            /></a>
+            {%- endfor -%}
+        </nav>
+    </span>
+    {% endif %}
+</aside>

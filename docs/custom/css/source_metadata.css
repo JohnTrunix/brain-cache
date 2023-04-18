@@ -1,0 +1,68 @@
+/*  change styles for:
+        mkdocs-git-revision-date-localized-plugin 
+        mkdocs-git-committers-plugin-2
+
+    .overrides/partials/source-file.html
+    
+*/
+
+.md-source-file {
+    margin: 1em 0;
+}
+
+[dir="ltr"] .md-source-file__fact {
+    margin-right: 0.6rem;
+}
+
+.md-source-file__fact {
+    align-items: center;
+    color: var(--md-default-fg-color--light);
+    display: inline-flex;
+    font-size: 0.68rem;
+    gap: 0.3rem;
+}
+
+.md-source-file__fact .md-icon {
+    flex-shrink: 0;
+    margin-bottom: 0.05rem;
+}
+
+.md-source-file__fact svg {
+    width: 0.9rem;
+}
+
+[dir="ltr"] .md-source-file__fact .md-author {
+    float: left;
+}
+
+md-author::hover {
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset a.md-author {
+    transform: scale(1);
+}
+
+.md-typeset a.md-author img {
+    filter: grayscale(100%) opacity(75%);
+    transition: filter 125ms;
+}
+
+.md-typeset a.md-author:hover img,
+.md-typeset a.md-author:focus img {
+    filter: grayscale(0);
+}
+
+.md-source-file__fact .md-author {
+    margin-right: 0.2rem;
+}
+
+.md-typeset .md-author {
+    display: block;
+    flex-shrink: 0;
+    height: 1.6rem;
+    overflow: hidden;
+    position: relative;
+    transition: color 125ms, transform 125ms;
+    width: 1.6rem;
+}

@@ -60,7 +60,7 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.tabs
-        #- navigation.sections
+        - navigation.sections
         - navigation.expand
         - navigation.indexes
         - navigation.top
@@ -109,7 +109,6 @@ extra:
 copyright: Copyright &copy; 2023 JohnTrunix
 
 plugins:
-    # disable social for local builds
     - social:
           cards: !ENV [CARDS, False]
     - tags
@@ -159,26 +158,28 @@ nav:
           - index.md
           - Ideas & Upcoming Projects: overview/ideas-upcoming-projects.md
           - Links & Resources: overview/urls-resources.md
+
     - Genral Notes:
           - git: general-notes/git.md
           - MkDocs Material: general-notes/mkdocs-material.md
-    - Alg & DS:
+
+    - Algo & DS:
           - Graphs: algorithms/graphs.md
-    - Coding:
-          - Python:
-                #- coding/python/index.md
-                - Typing: coding/python/typing.md
-                - FastAPI:
-                      - coding/python/fastapi/index.md
-                      - Parameter: coding/python/fastapi/parameter.md
-                      - Request Body: coding/python/fastapi/request-body.md
+    - Math:
+          - math/index.md
+          - Linear Algebra: math/linear-algebra.md
+          - Analysis: math/analysis.md
 
-                - Pickle: coding/python/pickle.md
+    - Python:
+          - Pydantic:
+                - coding/python/pydantic/index.md
+          - FastAPI:
+                - coding/python/fastapi/index.md
+                - Parameter: coding/python/fastapi/parameter.md
+                - Request Body: coding/python/fastapi/request-body.md
+          - Typing: coding/python/typing.md
+          - Pickle: coding/python/pickle.md
 
-          - Go:
-                - coding/golang/index.md
-                - Commands: coding/golang/commands.md
-                - Data Types: coding/golang/types.md
     - Web Dev:
           - Java Script:
                 - webdev/javascript/index.md
@@ -191,3 +192,8 @@ nav:
                 - Dependency Injection: webdev/angular/dependency-injection.md
                 - Testing: webdev/angular/testing.md
                 - First-party Libraries: webdev/angular/angular-libraries.md
+
+    - Go:
+          - coding/golang/index.md
+          - Commands: coding/golang/commands.md
+          - Data Types: coding/golang/types.md

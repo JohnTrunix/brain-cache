@@ -12,20 +12,20 @@
         <meta name="author" content="JohnTrunix">
       
       
-        <link rel="canonical" href="https://johntrunix.github.io/brain-cache/webdev/javascript/basics/">
+        <link rel="canonical" href="https://johntrunix.github.io/brain-cache/webdev/javascript/functions/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../loops-iterations/">
       
       
-        <link rel="next" href="../../angular/">
+        <link rel="next" href="../classes/">
       
       <link rel="icon" href="../../../custom/favicon.ico">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.7">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>Basics - JohnTrunix's Brain Cache</title>
+        <title>Functions - JohnTrunix's Brain Cache</title>
       
     
     
@@ -116,11 +116,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Basics - JohnTrunix's Brain Cache" >
+        <meta  property="og:title"  content="Functions - JohnTrunix's Brain Cache" >
       
         <meta  property="og:description"  content="JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy personal notes and insights" >
       
-        <meta  property="og:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/webdev/javascript/basics.png" >
+        <meta  property="og:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/webdev/javascript/functions.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -128,15 +128,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://johntrunix.github.io/brain-cache/webdev/javascript/basics/" >
+        <meta  property="og:url"  content="https://johntrunix.github.io/brain-cache/webdev/javascript/functions/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Basics - JohnTrunix's Brain Cache" >
+        <meta  name="twitter:title"  content="Functions - JohnTrunix's Brain Cache" >
       
         <meta  name="twitter:description"  content="JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy personal notes and insights" >
       
-        <meta  name="twitter:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/webdev/javascript/basics.png" >
+        <meta  name="twitter:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/webdev/javascript/functions.png" >
       
     
     
@@ -162,7 +162,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#basics" class="md-skip">
+        <a href="#javascript-functions" class="md-skip">
           Skip to content
         </a>
       
@@ -194,36 +194,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basics
+              Functions
             
           </span>
         </div>
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
+      
+        <form class="md-header__option" data-md-component="palette">
           
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18V6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69Z"/></svg>
+              </label>
+            
           
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18V6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69Z"/></svg>
+              </label>
+            
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18V6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69Z"/></svg>
-            </label>
-          
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18V6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69Z"/></svg>
-            </label>
-          
-        
-      </form>
+        </form>
+      
     
     
     
@@ -934,10 +936,44 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../coding/python/typing/" class="md-nav__link">
-        Typing
-      </a>
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../coding/python/typing/">Typing</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Typing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -948,10 +984,44 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../coding/python/pickle/" class="md-nav__link">
-        Pickle
-      </a>
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_4" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../coding/python/pickle/">Pickle</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Pickle
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1025,6 +1095,16 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         
@@ -1051,6 +1131,48 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../var-datatypes/" class="md-nav__link">
+        Variables & Data Types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operators-conditionals/" class="md-nav__link">
+        Operators & Conditionals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loops-iterations/" class="md-nav__link">
+        Loops & Iterations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -1063,12 +1185,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Basics
+          Functions
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Basics
+        Functions
       </a>
       
         
@@ -1087,63 +1209,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#datatypes" class="md-nav__link">
-    Datatypes
+  <a href="#default-parameters" class="md-nav__link">
+    Default Parameters
   </a>
-  
-    <nav class="md-nav" aria-label="Datatypes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#primitive" class="md-nav__link">
-    Primitive
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#objects" class="md-nav__link">
-    Objects
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#variable-scopes" class="md-nav__link">
-    Variable Scopes
-  </a>
-  
-    <nav class="md-nav" aria-label="Variable Scopes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#var" class="md-nav__link">
-    var
+  <a href="#rest-parameters" class="md-nav__link">
+    Rest Parameters
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#let" class="md-nav__link">
-    let
+      
+        <li class="md-nav__item">
+  <a href="#this-in-functions" class="md-nav__link">
+    this in Functions
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#const" class="md-nav__link">
-    const
+      
+        <li class="md-nav__item">
+  <a href="#arrow-function" class="md-nav__link">
+    Arrow Function
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#js-default-functions" class="md-nav__link">
+    JS Default Functions
+  </a>
   
 </li>
       
@@ -1151,6 +1247,34 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes/" class="md-nav__link">
+        Classes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../error-handling/" class="md-nav__link">
+        Error Handling
+      </a>
     </li>
   
 
@@ -1427,63 +1551,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#datatypes" class="md-nav__link">
-    Datatypes
+  <a href="#default-parameters" class="md-nav__link">
+    Default Parameters
   </a>
-  
-    <nav class="md-nav" aria-label="Datatypes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#primitive" class="md-nav__link">
-    Primitive
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#objects" class="md-nav__link">
-    Objects
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#variable-scopes" class="md-nav__link">
-    Variable Scopes
-  </a>
-  
-    <nav class="md-nav" aria-label="Variable Scopes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#var" class="md-nav__link">
-    var
+  <a href="#rest-parameters" class="md-nav__link">
+    Rest Parameters
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#let" class="md-nav__link">
-    let
+      
+        <li class="md-nav__item">
+  <a href="#this-in-functions" class="md-nav__link">
+    this in Functions
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#const" class="md-nav__link">
-    const
+      
+        <li class="md-nav__item">
+  <a href="#arrow-function" class="md-nav__link">
+    Arrow Function
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#js-default-functions" class="md-nav__link">
+    JS Default Functions
+  </a>
   
 </li>
       
@@ -1509,139 +1607,83 @@
     
       
     
-    <a href="https://github.com/JohnTrunix/brain-cache/raw/main/docs/webdev/javascript/basics.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/JohnTrunix/brain-cache/raw/main/docs/webdev/javascript/functions.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0Zm1.72 4.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.47-1.47-1.47-1.47a.75.75 0 0 1 0-1.06ZM3.28 7.78 1.81 9.25l1.47 1.47a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Zm8.22-6.218V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg>
     </a>
   
 
 
-<h1 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">&para;</a></h1>
-<p>Embed JavaScript in HTML using the <code>&lt;script&gt;</code> tag.</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;./main.js&quot;</span><span class="p">&gt;</span>
-<span class="w">    </span><span class="c1">// code or in imported file</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<h1 id="javascript-functions">JavaScript Functions<a class="headerlink" href="#javascript-functions" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// sum = 3</span>
 </code></pre></div>
+<ul>
+<li><code>a</code> and <code>b</code> are parameters</li>
+<li><code>b = 0</code> defines a default parameter</li>
+<li><code>let x</code> is a local variable and is not accessible outside the function</li>
+</ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Embed Script:</p>
 <ul>
-<li><code>&lt;head&gt;</code> tag to load before DOM content</li>
-<li><code>&lt;body&gt;</code>-end tag to load after DOM content (if it needs to access DOM elements)</li>
+<li>Function declaration is hoisted to the top of the scope.</li>
+<li>Accessing <code>add</code> without <code>()</code> returns the function object and not the result
+  <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">add</span>
+<span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">sum</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">)</span><span class="w"> </span><span class="c1">// result = 3</span>
+</code></pre></div></li>
 </ul>
 </div>
-<h2 id="datatypes">Datatypes<a class="headerlink" href="#datatypes" title="Permanent link">&para;</a></h2>
-<h3 id="primitive">Primitive<a class="headerlink" href="#primitive" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// undefined</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// number</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="p">;</span><span class="w"> </span><span class="c1">// number</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Test&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// string</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Test&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Test2&quot;</span><span class="p">];</span><span class="w"> </span><span class="c1">// array</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// boolean</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="c1">// null</span>
+<h3 id="default-parameters">Default Parameters<a class="headerlink" href="#default-parameters" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<h3 id="objects">Objects<a class="headerlink" href="#objects" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1">// object</span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">key1</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">key2</span><span class="o">:</span><span class="w"> </span><span class="mf">12</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">key1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">key2</span><span class="p">;</span>
+<h3 id="rest-parameters">Rest Parameters<a class="headerlink" href="#rest-parameters" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">add</span><span class="p">(...</span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">numbers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">number</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">sum</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="this-in-functions"><code>this</code> in Functions<a class="headerlink" href="#this-in-functions" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="mf">30</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">greet</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Hello, my name is </span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+<span class="w">    </span><span class="p">},</span>
 <span class="p">};</span>
 
-<span class="nx">object</span><span class="p">.</span><span class="nx">key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;new value&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// change value</span>
-<span class="nx">object</span><span class="p">[</span><span class="nx">key2</span><span class="p">]</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">// increment key2</span>
-<span class="nx">total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">object</span><span class="p">.</span><span class="nx">total</span><span class="p">();</span><span class="w"> </span><span class="c1">// call function</span>
-</code></pre></div>
-<h2 id="variable-scopes">Variable Scopes<a class="headerlink" href="#variable-scopes" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>type</th>
-<th>scope</th>
-<th>redeclare</th>
-<th>update</th>
-<th>hoisting</th>
-<th>hoisting init</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>var</td>
-<td>global/function/local</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span></td>
-<td>top of scope</td>
-<td><code>undefined</code></td>
-</tr>
-<tr>
-<td>let</td>
-<td>block</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg></span></td>
-<td>top of scope</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
-</tr>
-<tr>
-<td>const</td>
-<td>block</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
-<td>top of scope</td>
-<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg></span></td>
-</tr>
-</tbody>
-</table>
-<h3 id="var">var<a class="headerlink" href="#var" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>var</code> can be redeclared and updated (global/function/local scoped)</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// var Variable</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">test</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y</span><span class="p">;</span>
-<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// 20</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="let">let<a class="headerlink" href="#let" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>let</code> can't be redeclared but updated (block scoped)</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// let Variable</span>
-
-<span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// error can&#39;t redeclare</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// update</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">test</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// no error because function scoped</span>
-<span class="p">}</span>
-</code></pre></div>
-<h3 id="const">const<a class="headerlink" href="#const" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>const</code> can't be redeclared or updated (block scoped)</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// const Variable</span>
-
-<span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// error can&#39;t redeclare</span>
-<span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// error can&#39;t update</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">test</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">20</span><span class="p">;</span><span class="w"> </span><span class="c1">// no error because function scoped</span>
-<span class="p">}</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">greet</span><span class="p">();</span><span class="w"> </span><span class="c1">// Hello, my name is John</span>
 </code></pre></div>
 <ul>
-<li>Objects and Arrays can be updated</li>
+<li><code>this</code> refers to the object that called the function</li>
+<li><code>bind</code>, <code>call</code> and <code>apply</code> can be used to change the <code>this</code> value</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">key1</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;value1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">key2</span><span class="o">:</span><span class="w"> </span><span class="mf">12</span><span class="p">,</span>
-<span class="p">};</span>
-
-<span class="nx">object</span><span class="p">.</span><span class="nx">key1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;new value&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// no error</span>
+<h2 id="arrow-function">Arrow Function<a class="headerlink" href="#arrow-function" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span>
+<span class="kd">let</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">add</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span><span class="w"> </span><span class="c1">// sum = 3</span>
 </code></pre></div>
+<h2 id="js-default-functions">JS Default Functions<a class="headerlink" href="#js-default-functions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>alert()</code> - displays an alert box with a message and an OK button</li>
+<li><code>console.log()</code> - writes a message to the console</li>
+<li><code>eval()</code> - evaluates a string as a JavaScript expression</li>
+<li><code>isFinite()</code> - determines whether a number is finite</li>
+<li><code>isNaN()</code> - determines whether a value is NaN</li>
+<li><code>parseFloat()</code> - parses a string and returns a floating point number</li>
+<li><code>encodeURI()</code> - encodes a URI</li>
+<li><code>decodeURI()</code> - decodes a URI</li>
+<li><code>setTimeout()</code> - calls a function after a specified number of milliseconds</li>
+<li><code>setInterval()</code> - calls a function repeatedly, after a specified number of
+    milliseconds</li>
+</ul>
 
   
 
@@ -1653,13 +1695,13 @@
         <span class="md-icon" title="Last update">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-24T08:15:49+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-24</span> 
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-24T19:48:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-24</span> 
     </span>
     <span class="md-source-file__fact">
         <span class="md-icon" title="Created">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-24T08:15:49+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-24</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-24T19:48:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-24</span>
     </span>
       
     <span class="md-source-file__fact">
@@ -1745,7 +1787,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: JavaScript" rel="prev">
+          <a href="../loops-iterations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loops &amp; Iterations" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1754,20 +1796,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                JavaScript
+                Loops & Iterations
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../angular/" class="md-footer__link md-footer__link--next" aria-label="Next: Angular" rel="next">
+          <a href="../classes/" class="md-footer__link md-footer__link--next" aria-label="Next: Classes" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Angular
+                Classes
               </div>
             </div>
             <div class="md-footer__button md-icon">

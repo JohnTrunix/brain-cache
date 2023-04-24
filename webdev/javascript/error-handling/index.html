@@ -12,27 +12,27 @@
         <meta name="author" content="JohnTrunix">
       
       
-        <link rel="canonical" href="https://johntrunix.github.io/brain-cache/coding/golang/">
+        <link rel="canonical" href="https://johntrunix.github.io/brain-cache/webdev/javascript/error-handling/">
       
       
-        <link rel="prev" href="../../webdev/angular/angular-libraries/">
+        <link rel="prev" href="../classes/">
       
       
-        <link rel="next" href="commands/">
+        <link rel="next" href="../../angular/">
       
-      <link rel="icon" href="../../custom/favicon.ico">
+      <link rel="icon" href="../../../custom/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
-        <title>Go - JohnTrunix's Brain Cache</title>
+        <title>Error Handling - JohnTrunix's Brain Cache</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
   
@@ -89,13 +89,13 @@
       
     
     
-      <link rel="stylesheet" href="../../css/timeago.css">
+      <link rel="stylesheet" href="../../../css/timeago.css">
     
-      <link rel="stylesheet" href="../../custom/css/tweaks.css">
+      <link rel="stylesheet" href="../../../custom/css/tweaks.css">
     
-      <link rel="stylesheet" href="../../custom/css/source_metadata.css">
+      <link rel="stylesheet" href="../../../custom/css/source_metadata.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -116,11 +116,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Go - JohnTrunix's Brain Cache" >
+        <meta  property="og:title"  content="Error Handling - JohnTrunix's Brain Cache" >
       
         <meta  property="og:description"  content="JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy personal notes and insights" >
       
-        <meta  property="og:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/coding/golang/index.png" >
+        <meta  property="og:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/webdev/javascript/error-handling.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -128,15 +128,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://johntrunix.github.io/brain-cache/coding/golang/" >
+        <meta  property="og:url"  content="https://johntrunix.github.io/brain-cache/webdev/javascript/error-handling/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Go - JohnTrunix's Brain Cache" >
+        <meta  name="twitter:title"  content="Error Handling - JohnTrunix's Brain Cache" >
       
         <meta  name="twitter:description"  content="JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy personal notes and insights" >
       
-        <meta  name="twitter:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/coding/golang/index.png" >
+        <meta  name="twitter:image"  content="https://johntrunix.github.io/brain-cache/assets/images/social/webdev/javascript/error-handling.png" >
       
     
     
@@ -162,7 +162,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#go" class="md-skip">
+        <a href="#javascript-error-handling" class="md-skip">
           Skip to content
         </a>
       
@@ -176,9 +176,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="JohnTrunix&#39;s Brain Cache" class="md-header__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
+    <a href="../../.." title="JohnTrunix&#39;s Brain Cache" class="md-header__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
       
-  <img src="../../custom/rocket.png" alt="logo">
+  <img src="../../../custom/rocket.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -194,7 +194,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Go
+              Error Handling
             
           </span>
         </div>
@@ -304,7 +304,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         Overview
       </a>
     </li>
@@ -320,7 +320,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../general-notes/git/" class="md-tabs__link">
+      <a href="../../../general-notes/git/" class="md-tabs__link">
         Genral Notes
       </a>
     </li>
@@ -336,7 +336,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../algorithms/graphs/" class="md-tabs__link">
+      <a href="../../../algorithms/graphs/" class="md-tabs__link">
         Algo & DS
       </a>
     </li>
@@ -352,7 +352,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../math/" class="md-tabs__link">
+      <a href="../../../math/" class="md-tabs__link">
         Math
       </a>
     </li>
@@ -373,7 +373,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../python/pydantic/" class="md-tabs__link">
+      <a href="../../../coding/python/pydantic/" class="md-tabs__link">
         Python
       </a>
     </li>
@@ -385,6 +385,8 @@
         
   
   
+    
+  
 
 
   
@@ -396,7 +398,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../webdev/javascript/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Web Dev
       </a>
     </li>
@@ -408,15 +410,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../coding/golang/" class="md-tabs__link">
         Go
       </a>
     </li>
@@ -444,9 +444,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="JohnTrunix&#39;s Brain Cache" class="md-nav__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
+    <a href="../../.." title="JohnTrunix&#39;s Brain Cache" class="md-nav__button md-logo" aria-label="JohnTrunix's Brain Cache" data-md-component="logo">
       
-  <img src="../../custom/rocket.png" alt="logo">
+  <img src="../../../custom/rocket.png" alt="logo">
 
     </a>
     JohnTrunix's Brain Cache
@@ -498,7 +498,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../..">Overview</a>
+          <a href="../../..">Overview</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -521,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/ideas-upcoming-projects/" class="md-nav__link">
+      <a href="../../../overview/ideas-upcoming-projects/" class="md-nav__link">
         Ideas & Upcoming Projects
       </a>
     </li>
@@ -535,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../overview/urls-resources/" class="md-nav__link">
+      <a href="../../../overview/urls-resources/" class="md-nav__link">
         Links & Resources
       </a>
     </li>
@@ -592,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general-notes/git/" class="md-nav__link">
+      <a href="../../../general-notes/git/" class="md-nav__link">
         git
       </a>
     </li>
@@ -606,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../general-notes/mkdocs-material/" class="md-nav__link">
+      <a href="../../../general-notes/mkdocs-material/" class="md-nav__link">
         MkDocs Material
       </a>
     </li>
@@ -661,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithms/graphs/" class="md-nav__link">
+      <a href="../../../algorithms/graphs/" class="md-nav__link">
         Graphs
       </a>
     </li>
@@ -707,7 +707,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../math/">Math</a>
+          <a href="../../../math/">Math</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -730,7 +730,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear-algebra/" class="md-nav__link">
+      <a href="../../../math/linear-algebra/" class="md-nav__link">
         Linear Algebra
       </a>
     </li>
@@ -744,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/analysis/" class="md-nav__link">
+      <a href="../../../math/analysis/" class="md-nav__link">
         Analysis
       </a>
     </li>
@@ -827,7 +827,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../python/pydantic/">Pydantic</a>
+          <a href="../../../coding/python/pydantic/">Pydantic</a>
           
         </div>
       
@@ -879,7 +879,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../python/fastapi/">FastAPI</a>
+          <a href="../../../coding/python/fastapi/">FastAPI</a>
           
             <label for="__nav_5_2">
               <span class="md-nav__icon md-icon"></span>
@@ -902,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/fastapi/parameter/" class="md-nav__link">
+      <a href="../../../coding/python/fastapi/parameter/" class="md-nav__link">
         Parameter
       </a>
     </li>
@@ -916,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/fastapi/request-body/" class="md-nav__link">
+      <a href="../../../coding/python/fastapi/request-body/" class="md-nav__link">
         Request Body
       </a>
     </li>
@@ -959,7 +959,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../python/typing/">Typing</a>
+          <a href="../../../coding/python/typing/">Typing</a>
           
         </div>
       
@@ -1007,7 +1007,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../python/pickle/">Pickle</a>
+          <a href="../../../coding/python/pickle/">Pickle</a>
           
         </div>
       
@@ -1039,16 +1039,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
         
@@ -1063,7 +1063,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Web Dev
@@ -1074,18 +1074,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-        
-      
-      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_1" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
       
       
         
@@ -1110,7 +1110,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../webdev/javascript/">Java Script</a>
+          <a href="../">Java Script</a>
           
             <label for="__nav_6_1">
               <span class="md-nav__icon md-icon"></span>
@@ -1118,7 +1118,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6_1">
           <span class="md-nav__icon md-icon"></span>
           Java Script
@@ -1133,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/javascript/var-datatypes/" class="md-nav__link">
+      <a href="../var-datatypes/" class="md-nav__link">
         Variables & Data Types
       </a>
     </li>
@@ -1147,7 +1147,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/javascript/operators-conditionals/" class="md-nav__link">
+      <a href="../operators-conditionals/" class="md-nav__link">
         Operators & Conditionals
       </a>
     </li>
@@ -1161,7 +1161,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/javascript/loops-iterations/" class="md-nav__link">
+      <a href="../loops-iterations/" class="md-nav__link">
         Loops & Iterations
       </a>
     </li>
@@ -1175,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/javascript/functions/" class="md-nav__link">
+      <a href="../functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -1189,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/javascript/classes/" class="md-nav__link">
+      <a href="../classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -1201,11 +1201,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../webdev/javascript/error-handling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Error Handling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Error Handling
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    Debugging
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1258,7 +1299,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../webdev/angular/">Angular</a>
+          <a href="../../angular/">Angular</a>
           
             <label for="__nav_6_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1281,7 +1322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/angular/modules/" class="md-nav__link">
+      <a href="../../angular/modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -1295,7 +1336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/angular/components/" class="md-nav__link">
+      <a href="../../angular/components/" class="md-nav__link">
         Components
       </a>
     </li>
@@ -1309,7 +1350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/angular/directives/" class="md-nav__link">
+      <a href="../../angular/directives/" class="md-nav__link">
         Directives
       </a>
     </li>
@@ -1323,7 +1364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/angular/dependency-injection/" class="md-nav__link">
+      <a href="../../angular/dependency-injection/" class="md-nav__link">
         Dependency Injection
       </a>
     </li>
@@ -1337,7 +1378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/angular/testing/" class="md-nav__link">
+      <a href="../../angular/testing/" class="md-nav__link">
         Testing
       </a>
     </li>
@@ -1351,7 +1392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../webdev/angular/angular-libraries/" class="md-nav__link">
+      <a href="../../angular/angular-libraries/" class="md-nav__link">
         First-party Libraries
       </a>
     </li>
@@ -1378,16 +1419,16 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
       
       
         
@@ -1403,8 +1444,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="./">Go</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../coding/golang/">Go</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -1412,7 +1453,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           Go
@@ -1427,7 +1468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="commands/" class="md-nav__link">
+      <a href="../../../coding/golang/commands/" class="md-nav__link">
         Commands
       </a>
     </li>
@@ -1441,7 +1482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="types/" class="md-nav__link">
+      <a href="../../../coding/golang/types/" class="md-nav__link">
         Data Types
       </a>
     </li>
@@ -1482,22 +1523,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-setup" class="md-nav__link">
-    Installation &amp; Setup
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-variables" class="md-nav__link">
-    Environment Variables
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important-packages" class="md-nav__link">
-    Important Packages
+  <a href="#debugging" class="md-nav__link">
+    Debugging
   </a>
   
 </li>
@@ -1524,28 +1551,34 @@
     
       
     
-    <a href="https://github.com/JohnTrunix/brain-cache/raw/main/docs/coding/golang/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/JohnTrunix/brain-cache/raw/main/docs/webdev/javascript/error-handling.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 1.75C4 .784 4.784 0 5.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 14.25 15h-9a.75.75 0 0 1 0-1.5h9a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 10 4.25V1.5H5.75a.25.25 0 0 0-.25.25v2.5a.75.75 0 0 1-1.5 0Zm1.72 4.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1 0 1.06l-2 2a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.47-1.47-1.47-1.47a.75.75 0 0 1 0-1.06ZM3.28 7.78 1.81 9.25l1.47 1.47a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-2-2a.75.75 0 0 1 0-1.06l2-2a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Zm8.22-6.218V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg>
     </a>
   
 
 
-<h1 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h1>
-<p>Code Review Comments: <a href="https://github.com/golang/go/wiki/CodeReviewComments">CodeReviewComments golang/go</a></p>
-<h2 id="installation-setup">Installation &amp; Setup<a class="headerlink" href="#installation-setup" title="Permanent link">&para;</a></h2>
-<p>Installation instructions: <a href="https://golang.org/doc/install">golang.org/doc/install</a></p>
-<h2 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>setx GOPATH %USERPROFILE%\go
-setx path &quot;%path%;%USERPROFILE%\bin&quot;
+<h1 id="javascript-error-handling">JavaScript Error Handling<a class="headerlink" href="#javascript-error-handling" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// code that may throw an error</span>
+<span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s2">&quot;Error message&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// throw a custom error</span>
+<span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">err</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// code to handle the error</span>
+<span class="p">}</span><span class="w"> </span><span class="k">finally</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// code to be executed regardless of the error at the end</span>
+<span class="p">}</span>
 </code></pre></div>
-<h2 id="important-packages">Important Packages<a class="headerlink" href="#important-packages" title="Permanent link">&para;</a></h2>
-<p>Adnvanced Formatter</p>
-<div class="highlight"><pre><span></span><code>go install golang.go/x/tools/cmd/goimports@latest
-</code></pre></div>
-<p>Linter</p>
-<div class="highlight"><pre><span></span><code>go install golang.org/x/lint/golint@latest
-</code></pre></div>
+<ul>
+<li><code>try</code> - code that may throw an error</li>
+<li><code>catch</code> - code to handle the error</li>
+<li><code>finally</code> - code to that will be executed at the end of the <code>try</code> block</li>
+<li><code>throw new Error("Error message")</code> - throw a custom error</li>
+</ul>
+<h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>console.log()</code> - print to the console</li>
+<li><code>debugger;</code> - stop execution and call debugging function</li>
+</ul>
 
   
 
@@ -1557,13 +1590,13 @@ setx path &quot;%path%;%USERPROFILE%\bin&quot;
         <span class="md-icon" title="Last update">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-18T17:44:44+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-18</span> 
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-24T19:48:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-24</span> 
     </span>
     <span class="md-source-file__fact">
         <span class="md-icon" title="Created">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-17T15:03:11+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-17</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-04-24T19:48:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-04-24</span>
     </span>
       
     <span class="md-source-file__fact">
@@ -1649,7 +1682,7 @@ setx path &quot;%path%;%USERPROFILE%\bin&quot;
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../webdev/angular/angular-libraries/" class="md-footer__link md-footer__link--prev" aria-label="Previous: First-party Libraries" rel="prev">
+          <a href="../classes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Classes" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1658,20 +1691,20 @@ setx path &quot;%path%;%USERPROFILE%\bin&quot;
                 Previous
               </span>
               <div class="md-ellipsis">
-                First-party Libraries
+                Classes
               </div>
             </div>
           </a>
         
         
           
-          <a href="commands/" class="md-footer__link md-footer__link--next" aria-label="Next: Commands" rel="next">
+          <a href="../../angular/" class="md-footer__link md-footer__link--next" aria-label="Next: Angular" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Commands
+                Angular
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1744,18 +1777,18 @@ setx path &quot;%path%;%USERPROFILE%\bin&quot;
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.share", "content.action.view", "content.code.copy"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "search.suggest", "search.share", "content.action.view", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
-        <script src="../../js/timeago.min.js"></script>
+        <script src="../../../js/timeago.min.js"></script>
       
-        <script src="../../js/timeago_mkdocs_material.js"></script>
+        <script src="../../../js/timeago_mkdocs_material.js"></script>
       
         <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
       
-        <script src="../../custom/js/mathjax.js"></script>
+        <script src="../../../custom/js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

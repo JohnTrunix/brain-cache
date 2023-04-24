@@ -26,16 +26,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://johntrunix.github.io/brain-cache/coding/python/pickle/</loc>
-         <lastmod>2023-04-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://johntrunix.github.io/brain-cache/coding/python/typing/</loc>
-         <lastmod>2023-04-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://johntrunix.github.io/brain-cache/coding/python/fastapi/</loc>
          <lastmod>2023-04-24</lastmod>
          <changefreq>daily</changefreq>
@@ -51,7 +41,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/pickle/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://johntrunix.github.io/brain-cache/coding/python/pydantic/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/typing/</loc>
          <lastmod>2023-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -131,7 +131,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/basics/</loc>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/classes/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/error-handling/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/functions/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/loops-iterations/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/operators-conditionals/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/var-datatypes/</loc>
          <lastmod>2023-04-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

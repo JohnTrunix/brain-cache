@@ -187,6 +187,16 @@ nav:
                 - coding/python/pickle/index.md
 
     - Web Dev:
+          - HTML:
+                - webdev/html/index.md
+                - Common Elements: webdev/html/common-elements.md
+                - Meta Tags: webdev/html/meta-tags.md
+          - CSS:
+                - webdev/css/index.md
+                - Selectors: webdev/css/selectors.md
+                - Common Properties: webdev/css/common-properties.md
+                - Box Model: webdev/css/box-model.md
+                - Structured Content: webdev/css/structured-content.md
           - Java Script:
                 - webdev/javascript/index.md
                 - Variables & Data Types: webdev/javascript/var-datatypes.md

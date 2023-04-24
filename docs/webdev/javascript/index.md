@@ -4,6 +4,22 @@
 
     JavaScript is a programming language that adds interactivity to your website. This happens in the browser, and it is the main language for the web.
 
+Embed JavaScript in HTML using the `<script>` tag.
+
+```html
+<script type="text/javascript" src="./main.js">
+    // code or in imported file
+    console.log("test")
+</script>
+```
+
+!!! note
+
+    Embed Script:
+
+    - `<head>` tag to load before DOM content
+    - `<body>`-end tag to load after DOM content (if it needs to access DOM elements)
+
 ## Installation
 
 -   [Node.js](https://nodejs.org/en/)

@@ -126,6 +126,46 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/css/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/css/box-model/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/css/common-properties/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/css/selectors/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/css/structured-content/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/html/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/html/common-elements/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://johntrunix.github.io/brain-cache/webdev/html/meta-tags/</loc>
+         <lastmod>2023-04-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://johntrunix.github.io/brain-cache/webdev/javascript/</loc>
          <lastmod>2023-04-24</lastmod>
          <changefreq>daily</changefreq>

@@ -150,6 +150,10 @@ markdown_extensions:
           alternate_style: true
     - pymdownx.tasklist:
           custom_checkbox: true
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
     - pymdownx.mark
     - pymdownx.details
 
@@ -177,13 +181,20 @@ nav:
                 - coding/python/fastapi/index.md
                 - Parameter: coding/python/fastapi/parameter.md
                 - Request Body: coding/python/fastapi/request-body.md
-          - Typing: coding/python/typing.md
-          - Pickle: coding/python/pickle.md
+          - Typing:
+                - coding/python/typing/index.md
+          - Pickle:
+                - coding/python/pickle/index.md
 
     - Web Dev:
           - Java Script:
                 - webdev/javascript/index.md
-                - Basics: webdev/javascript/basics.md
+                - Variables & Data Types: webdev/javascript/var-datatypes.md
+                - Operators & Conditionals: webdev/javascript/operators-conditionals.md
+                - Loops & Iterations: webdev/javascript/loops-iterations.md
+                - Functions: webdev/javascript/functions.md
+                - Classes: webdev/javascript/classes.md
+                - Error Handling: webdev/javascript/error-handling.md
           - Angular:
                 - webdev/angular/index.md
                 - Modules: webdev/angular/modules.md

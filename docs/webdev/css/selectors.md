@@ -42,7 +42,7 @@ div {
 
 ## Advanced Selectors
 
-Note: All Selector Patterns can be found at [w3schools.com](https://www.w3schools.com/cssref/css_selectors.php){target=\_blank}.
+**Note:** All Selector Patterns can be found at [w3schools.com](https://www.w3schools.com/cssref/css_selectors.php){target=\_blank}.
 
 ### Grouping Selector
 
@@ -66,3 +66,26 @@ div p {
 !!! note
 
     Styles are only applied to the last element which are in the hierarchy.
+
+### Attribute Selector
+
+```html
+<a href="www.google.com">Google</a>
+<a href="www.google.com" target="_blank">Google</a>
+```
+
+```css
+a[target] {
+    color: green;
+}
+
+a[target="_blank"] {
+    color: red;
+}
+```
+
+-   `[attribute]` selects all elements with this attribute name
+-   `[attribute="value"]` selects all elements with this attribute name and value
+-   `[attribute~="value"]` selects all elements with this attribute name and value (separated by spaces)
+
+**Note:** More Patterns can be found at [w3schools.com](https://www.w3schools.com/css/css_attribute_selectors.asp){target=\_blank}.

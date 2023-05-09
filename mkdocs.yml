@@ -74,6 +74,7 @@ theme:
 extra_css:
     - custom/css/tweaks.css
     - custom/css/source_metadata.css
+    - custom/css/pdf-cards.css
 
 extra_javascript:
     - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
@@ -171,6 +172,7 @@ nav:
           - Graphs: algorithms/graphs.md
     - Math:
           - math/index.md
+          - General: math/general.md
           - Linear Algebra: math/linear-algebra.md
           - Analysis: math/analysis.md
 

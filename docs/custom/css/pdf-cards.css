@@ -1,0 +1,115 @@
+/* PDF Card Styling */
+
+.pdf-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdf-cards h3 {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pdf-cards h3:first-child {
+    margin-top: 0;
+}
+
+.pdf-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 0.3rem 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--md-primary-fg-color);
+    border-radius: 5px;
+    color: var(--md-primary-fg-color);
+}
+
+.card-action:hover {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+.action-show,
+.action-download {
+    font-size: 0.6rem;
+}
+
+.card-title::before {
+    content: "📄";
+    margin-right: 10px;
+}
+
+.action-show::before {
+    content: "📌";
+    margin-right: 0.2rem;
+}
+
+.action-download::before {
+    content: "📁";
+    margin-right: 0.2rem;
+}
+
+.card-tag::before {
+    content: "🏷️";
+    margin-right: 0.2rem;
+    font-size: 0.5rem;
+}
+
+.card-tag {
+    font-size: 0.5rem;
+    margin: 0 0.2rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.card-tag:hover {
+    transform: translateY(-1px);
+}
+
+.release-info {
+    border-left: 3px solid #e0e0e0;
+    margin: 2rem 0 0 0;
+
+    padding: 0 0.5rem;
+}
+
+.release-info p {
+    margin: 0;
+    font-size: 0.6rem;
+    text-align: justify;
+}
+
+/* Responsive Styling */
+
+@media screen and (max-width: 600px) {
+    .pdf-card {
+        flex-direction: column;
+    }
+
+    .card-title {
+        align-self: flex-start;
+    }
+
+    .card-actions {
+        margin-top: 0.5rem;
+    }
+}

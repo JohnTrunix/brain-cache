@@ -14,13 +14,26 @@ LA_MD_FILE_PATH: str = Path("./docs/math/linear-algebra.md")
 env = Environment(loader=FileSystemLoader("./scripts/templates"))
 pdf_card_template = env.get_template("pdf_card.html")
 
+def get_release_tag() -> str:
+    """
+    Get release tag from ./docs/math/pdf/release.txt
 
-def filter_files() -> tuple[list, list]:
+    :return: Release Tag as str
+    """
+    if Path(PDF_FILE_PATH / "release.txt").exists():
+        with open(PDF_FILE_PATH / "release.txt", "r", encoding="utf-8") as file:
+            return file.read().strip()
+    else:
+        return "None"         
+
+
+def filter_files() -> tuple[list, list, list]:
     """
     Get files from PDF_FILE_PATH and filter them into LA and ANA
 
     :return: tuple of lists of files
     """
+    release_tag = get_release_tag()
     files = []
     ana_files = {}
     la_files = {}
@@ -28,7 +41,7 @@ def filter_files() -> tuple[list, list]:
 
     for file in PDF_FILE_PATH.iterdir():
         if file.suffix == ".pdf":
-            files.append([file.stem.split("_")[0], file.stem, file.name])
+            files.append([file.stem.split("_")[0], file.stem, file.name, release_tag])
 
     for file in files:
         tag = file[0]
@@ -55,7 +68,6 @@ def filter_files() -> tuple[list, list]:
     ana_files = [(tag, files) for tag, files in ana_files.items()]
     la_files = [(tag, files) for tag, files in la_files.items()]
     general_files = [(tag, files) for tag, files in general_files.items()]
-
 
     return ana_files, la_files, general_files
 

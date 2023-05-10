@@ -1,5 +1,4 @@
 # Ignore Math PDFs & Generated MD files
-docs/math/pdf/
 docs/math/general.md
 docs/math/analysis.md
 docs/math/linear-algebra.md

@@ -26,6 +26,17 @@ def get_release_tag() -> str:
     else:
         return "None"         
 
+def sort_files(files: list) -> list:
+    """
+    Sort files by tag
+
+    :param files: List of files
+    :return: Sorted list of files
+    """
+    files.sort(key=lambda x: x[0], reverse=False)
+    for file in files:
+        file[1].sort(key=lambda x: x[1], reverse=False)
+    return files
 
 def filter_files() -> tuple[list, list, list]:
     """
@@ -69,6 +80,10 @@ def filter_files() -> tuple[list, list, list]:
     la_files = [(tag, files) for tag, files in la_files.items()]
     general_files = [(tag, files) for tag, files in general_files.items()]
 
+    ana_files = sort_files(ana_files)
+    la_files = sort_files(la_files)
+    general_files = sort_files(general_files)
+    
     return ana_files, la_files, general_files
 
 

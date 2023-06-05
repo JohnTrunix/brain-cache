@@ -220,3 +220,6 @@ nav:
           - coding/golang/index.md
           - Commands: coding/golang/commands.md
           - Data Types: coding/golang/types.md
+
+    - DS Study:
+          - ds-study/PROG2.md

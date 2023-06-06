@@ -1,6 +1,7 @@
 mkdocs-material
 
 # mkdocs material plugins and their dependencies
+mkdocs-glightbox
 mkdocs-git-revision-date-localized-plugin
 mkdocs-git-committers-plugin-2
 lxml

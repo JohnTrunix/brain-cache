@@ -117,6 +117,8 @@ plugins:
           lang:
               - en
               - de
+    - glightbox:
+          loop: false
     - git-revision-date-localized:
           type: timeago
           enable_creation_date: true
@@ -170,11 +172,6 @@ nav:
 
     - Algo & DS:
           - Graphs: algorithms/graphs.md
-    - Math:
-          - math/index.md
-          - General: math/general.md
-          - Linear Algebra: math/linear-algebra.md
-          - Analysis: math/analysis.md
 
     - Python:
           - Pydantic:
@@ -221,5 +218,20 @@ nav:
           - Commands: coding/golang/commands.md
           - Data Types: coding/golang/types.md
 
-    - DS Study:
-          - ds-study/PROG2.md
+    - Data Science Study:
+          - ds-study/index.md
+          - Math:
+                - math/index.md
+                - General: math/general.md
+                - Linear Algebra: math/linear-algebra.md
+                - Analysis: math/analysis.md
+          - Data Engineering 1:
+                - RegEx: ds-study/de1/regex.md
+                - Structured Data: ds-study/de1/structured.md
+          - Programming 2:
+                - Object Oriented: ds-study/prog2/oop.md
+                - Testing: ds-study/prog2/testing.md
+                - Requests: ds-study/prog2/requests.md
+                - Pandas: ds-study/prog2/pandas.md
+                - Internet Standars: ds-study/prog2/standards.md
+                - Sorting Algorithms: ds-study/prog2/sorting.md

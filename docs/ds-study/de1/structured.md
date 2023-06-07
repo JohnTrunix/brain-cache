@@ -78,9 +78,9 @@
 
 !!! info
 
-    **Slice** - Selection of one or more Dimensions
+    **Slice** - Selection of one slice of a Dimension
 
-    **Dice** - Selection of one or more Dimensions and one or more Members
+    **Dice** - Selection of one or more slices of multiple Dimensions
 
 ![Slice & Dice](./images/slice-dice.png)
 

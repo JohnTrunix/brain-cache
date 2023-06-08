@@ -228,6 +228,7 @@ nav:
           - Data Engineering 1:
                 - RegEx: ds-study/de1/regex.md
                 - Structured Data: ds-study/de1/structured.md
+                - Unstructured Data: ds-study/de1/unstructured.md
           - Programming 2:
                 - Object Oriented: ds-study/prog2/oop.md
                 - Testing: ds-study/prog2/testing.md

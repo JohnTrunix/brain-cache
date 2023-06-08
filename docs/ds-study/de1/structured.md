@@ -12,11 +12,9 @@
 
 ## OLTP vs OLAP
 
-!!! info
+**OLTP** - Online Transaction Processing
 
-    OLTP - Online Transaction Processing
-
-    OLAP - Online Analytical Processing
+**OLAP** - Online Analytical Processing
 
 ### OLTP
 
@@ -58,31 +56,35 @@
 
 ### Pivoting / Rotation
 
-!!! info
-
-    Cube rotation at Dimensions change, analysis from different perspectives. Perspectives
+Cube rotation at Dimensions change, analysis from different perspectives. Perspectives
 
 ![Pivoting & Rotation](./images/pivot-rotate.png)
 
 ### Roll-up / Drill-down
 
-!!! info
+**Roll-up** - Aggregation of detailed Data (Dimension Reduction)
 
-    **Roll-up** - Aggregation of detailed Data (Dimension Reduction)
-
-    **Drill-down** - Breakdown of aggregated Data (Dimension Enlargement)
+**Drill-down** - Breakdown of aggregated Data (Dimension Enlargement)
 
 ![Roll-up & Drill-down](./images/drill-roll.png)
 
 ### Slice / Dice
 
-!!! info
+**Slice** - Selection of one slice of a Dimension
 
-    **Slice** - Selection of one slice of a Dimension
-
-    **Dice** - Selection of one or more slices of multiple Dimensions
+**Dice** - Selection of one or more slices of multiple Dimensions
 
 ![Slice & Dice](./images/slice-dice.png)
+
+## ROLAP, MOLAP, HOLAP
+
+**MOLAP** - Multidimensional OLAP: Datawarehouse is a proprietary system, tailored for multi-dimensional data
+manipulations
+
+**ROLAP** - Relational OLAP: Multi-dimensional data mapped onto tables, and manipulations
+mapped onto relational queries
+
+**HOLAP** - Hybrid OLAP: Relational systems extended with specific OLAP functionalities
 
 ## Data Warehouse
 
@@ -116,6 +118,86 @@
 -   Data Mining
     -   hidden Patterns, unknown Correlations, etc.
     -   Classification, Prediction, etc.
+
+### Data Warehouse Modelling
+
+| **Qualitative**                             | **Quantitative**                          |
+| ------------------------------------------- | ----------------------------------------- |
+| Category Attributes                         | Summary Attributes (Subject of Analysis)  |
+| Data as navigation Structure (Drillpahts)   | Cells of Data Cubes (Dimensions as Edges) |
+| Modeled as Term Hierarchies with Dimensions |                                           |
+
+**Dimensions**
+
+-   Describes a view of Measures
+-   Orthogonal Structure for Data Space
+
+**Dimensional Hierarchies**
+
+-   Nodes für classification Hierarchies
+-   Classification Level describes granularity of Data
+-   Representation of Dimensions via classification Schema
+
+**Simple Hierarchies**
+
+```mermaid
+graph LR
+  TOP --> country --> city --> store
+```
+
+-   Higher Hierarchy Level contains aggregated Values of lower Level
+
+**Parallel Hierarchies**
+
+```mermaid
+graph LR
+	TOP --> year
+	TOP --> week
+
+	year --> quarter
+    quarter --> month
+	month --> day
+	week --> day
+```
+
+-   Multiple independent Grouping Options
+
+**Dimension Table**
+
+-   ID for classification Node
+-   Characteristic Attributes (Brand, Producer, Title, etc.)
+-   Foreign Key (for direct Parent Hierarchy Level)
+
+**Fact Table**
+
+-   Foreign Keys (referencing bottom-level Category of each Dimension)
+-   Set of all Foreign Keys (= **Composite Primary Key**)
+
+### Star Schema
+
+-   Avoiding Joins over multiple Tables
+-   Denormalized Schema (Data Redundancy)
+-   One Dimension Table per Dimension
+
+![Star Schema](./images/star-schema.png){ loading=lazy }
+
+### Snowflake Schema
+
+-   Mapping of Classification (seperate Tables for each Dimension/Level/Classification)
+-   Normalized Schema (avoiding Update Anomalies, Redundancy, etc.)
+
+![Snowflake Schema](./images/snowflake-schema.png){ loading=lazy }
+
+### Star vs Snowflake Schema
+
+|                                     | Star Schema                                | Snowflake Schema                 |
+| ----------------------------------- | ------------------------------------------ | -------------------------------- |
+| **Normalization & Data Redundancy** | denromalized, redundant Data in Dim Tables | fully normalized Dim Tables      |
+| **Query Complexity**                | simple Queries                             | complex Queries                  |
+| **Query Performance**               | faster                                     | slower                           |
+| **Disk Space**                      | more Storage                               | less Storage                     |
+| **Data Integrity Issues**           | might occur                                | less likely                      |
+| **Setup / Maintenance**             | easier Setup, harder Maintenance           | harder Setup, easier Maintenance |
 
 ## Data Lake
 
@@ -179,18 +261,77 @@ Process of extracting Data from Source Systems and bringing it into Data Warehou
 
 ### Transform
 
+-   Data gets restructured to make it compliant for Data Warehouse (Data, Schema, etc.)
+
 ### Load
+
+**Record Based Loading**
+
+-   Trigger, Indices and Constraints can remain active
+-   No long Table/DB Locks
+
+**Bulk Loading**
+
+-   Is used mostly for special Context
+-   Complete DB/Table Locks
+-   Ignores Triggers and Constraints checks
+-   Needs Checkpoints for Resuming
 
 ### ETL vs ELT
 
+**ELT** - Extract, Load, Transform: Variant of ETL, where Data is loaded into Data Warehouse first, and then transformed with SQL (similar like Data Lage with on-demand Processing)
+
 ## Profiling
+
+!!! info
+
+    Content Analysis before Staging Area
+
+**Content & Structure Analysis**
+
+-   Data Types
+-   Value Ranges
+-   Distribution/Variance
+-   Null Values
+-   Cardinality
+-   Patterns (e.g. Dates, Names, etc.)
+
+**Dependencie Analysis** Analysis betweend different Attributes and Relations
+
+-   Functional Dependencies (Primary Key Candidates)
+-   Integrity Constraints
+
+**Overlap Analysis**
+
+-   Redundancy
+-   Foreign Key Relationships
 
 ## Data Cleansing
 
-### Nan Values
+!!! info
 
-## Schemas
+    Cleaning, normalizing, tokenizing, discretizing, standardizing, etc. of the Data
 
-### Star Schema
+**Normalization & Standardization**
 
-### Snowflake Schema
+-   Discretization (categorizing) numerical Values
+-   Domain specific Transformations (e.g. Adresses, Name Formats, St. to Street, etc.)
+
+### Missing Values
+
+!!! info
+
+    Treating Null Values, Distortions/Noisiness (Biases)
+
+**Recognition**
+
+-   Simple Analysis (e.g. amount of Null Values, frequency, etc)
+-   Order Analysis (e.g. no Values in a specific Range)
+-   Multilated Data (e.g. ignoring Values in a specific Range)
+-   Recognition (e.g. Analysis of Data Distribution, Domain Knowledge, etc.)
+
+**Treatment**
+
+-   Unbiased Estimators (mean, median, standard deviation, etc.)
+-   Attribute Relationships (correlation, etc.)
+-   Statistical Techniques (linear regression, neural networks, etc.)

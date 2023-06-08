@@ -18,7 +18,7 @@
         <link rel="prev" href="../regex/">
       
       
-        <link rel="next" href="../../prog2/oop/">
+        <link rel="next" href="../unstructured/">
       
       <link rel="icon" href="../../../custom/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
@@ -1763,6 +1763,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
@@ -1906,9 +1908,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rolap-molap-holap" class="md-nav__link">
+    ROLAP, MOLAP, HOLAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-warehouse" class="md-nav__link">
     Data Warehouse
   </a>
+  
+    <nav class="md-nav" aria-label="Data Warehouse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-warehouse-modelling" class="md-nav__link">
+    Data Warehouse Modelling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-schema" class="md-nav__link">
+    Star Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snowflake-schema" class="md-nav__link">
+    Snowflake Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-vs-snowflake-schema" class="md-nav__link">
+    Star vs Snowflake Schema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1983,35 +2026,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nan-values" class="md-nav__link">
-    Nan Values
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schemas" class="md-nav__link">
-    Schemas
-  </a>
-  
-    <nav class="md-nav" aria-label="Schemas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#star-schema" class="md-nav__link">
-    Star Schema
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#snowflake-schema" class="md-nav__link">
-    Snowflake Schema
+  <a href="#missing-values" class="md-nav__link">
+    Missing Values
   </a>
   
 </li>
@@ -2025,6 +2041,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unstructured/" class="md-nav__link">
+        Unstructured Data
+      </a>
     </li>
   
 
@@ -2281,9 +2311,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rolap-molap-holap" class="md-nav__link">
+    ROLAP, MOLAP, HOLAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-warehouse" class="md-nav__link">
     Data Warehouse
   </a>
+  
+    <nav class="md-nav" aria-label="Data Warehouse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-warehouse-modelling" class="md-nav__link">
+    Data Warehouse Modelling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-schema" class="md-nav__link">
+    Star Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snowflake-schema" class="md-nav__link">
+    Snowflake Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-vs-snowflake-schema" class="md-nav__link">
+    Star vs Snowflake Schema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2358,35 +2429,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#nan-values" class="md-nav__link">
-    Nan Values
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#schemas" class="md-nav__link">
-    Schemas
-  </a>
-  
-    <nav class="md-nav" aria-label="Schemas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#star-schema" class="md-nav__link">
-    Star Schema
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#snowflake-schema" class="md-nav__link">
-    Snowflake Schema
+  <a href="#missing-values" class="md-nav__link">
+    Missing Values
   </a>
   
 </li>
@@ -2458,11 +2502,8 @@
 </tbody>
 </table>
 <h2 id="oltp-vs-olap">OLTP vs OLAP<a class="headerlink" href="#oltp-vs-olap" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>OLTP - Online Transaction Processing</p>
-<p>OLAP - Online Analytical Processing</p>
-</div>
+<p><strong>OLTP</strong> - Online Transaction Processing</p>
+<p><strong>OLAP</strong> - Online Analytical Processing</p>
 <h3 id="oltp">OLTP<a class="headerlink" href="#oltp" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -2570,25 +2611,22 @@
 <p>Operations to transform &amp; analyze multidimensional Data Cubes</p>
 </div>
 <h3 id="pivoting-rotation">Pivoting / Rotation<a class="headerlink" href="#pivoting-rotation" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
 <p>Cube rotation at Dimensions change, analysis from different perspectives. Perspectives</p>
-</div>
 <p><a class="glightbox" href="../images/pivot-rotate.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Pivoting &amp; Rotation" src="../images/pivot-rotate.png" /></a></p>
 <h3 id="roll-up-drill-down">Roll-up / Drill-down<a class="headerlink" href="#roll-up-drill-down" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
 <p><strong>Roll-up</strong> - Aggregation of detailed Data (Dimension Reduction)</p>
 <p><strong>Drill-down</strong> - Breakdown of aggregated Data (Dimension Enlargement)</p>
-</div>
 <p><a class="glightbox" href="../images/drill-roll.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Roll-up &amp; Drill-down" src="../images/drill-roll.png" /></a></p>
 <h3 id="slice-dice">Slice / Dice<a class="headerlink" href="#slice-dice" title="Permanent link">&para;</a></h3>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
 <p><strong>Slice</strong> - Selection of one slice of a Dimension</p>
 <p><strong>Dice</strong> - Selection of one or more slices of multiple Dimensions</p>
-</div>
 <p><a class="glightbox" href="../images/slice-dice.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Slice &amp; Dice" src="../images/slice-dice.png" /></a></p>
+<h2 id="rolap-molap-holap">ROLAP, MOLAP, HOLAP<a class="headerlink" href="#rolap-molap-holap" title="Permanent link">&para;</a></h2>
+<p><strong>MOLAP</strong> - Multidimensional OLAP: Datawarehouse is a proprietary system, tailored for multi-dimensional data
+manipulations</p>
+<p><strong>ROLAP</strong> - Relational OLAP: Multi-dimensional data mapped onto tables, and manipulations
+mapped onto relational queries</p>
+<p><strong>HOLAP</strong> - Hybrid OLAP: Relational systems extended with specific OLAP functionalities</p>
 <h2 id="data-warehouse">Data Warehouse<a class="headerlink" href="#data-warehouse" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2628,6 +2666,124 @@
 </ul>
 </li>
 </ul>
+<h3 id="data-warehouse-modelling">Data Warehouse Modelling<a class="headerlink" href="#data-warehouse-modelling" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Qualitative</strong></th>
+<th><strong>Quantitative</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Category Attributes</td>
+<td>Summary Attributes (Subject of Analysis)</td>
+</tr>
+<tr>
+<td>Data as navigation Structure (Drillpahts)</td>
+<td>Cells of Data Cubes (Dimensions as Edges)</td>
+</tr>
+<tr>
+<td>Modeled as Term Hierarchies with Dimensions</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dimensions</strong></p>
+<ul>
+<li>Describes a view of Measures</li>
+<li>Orthogonal Structure for Data Space</li>
+</ul>
+<p><strong>Dimensional Hierarchies</strong></p>
+<ul>
+<li>Nodes für classification Hierarchies</li>
+<li>Classification Level describes granularity of Data</li>
+<li>Representation of Dimensions via classification Schema</li>
+</ul>
+<p><strong>Simple Hierarchies</strong></p>
+<pre class="mermaid"><code>graph LR
+  TOP --&gt; country --&gt; city --&gt; store</code></pre>
+<ul>
+<li>Higher Hierarchy Level contains aggregated Values of lower Level</li>
+</ul>
+<p><strong>Parallel Hierarchies</strong></p>
+<pre class="mermaid"><code>graph LR
+    TOP --&gt; year
+    TOP --&gt; week
+
+    year --&gt; quarter
+    quarter --&gt; month
+    month --&gt; day
+    week --&gt; day</code></pre>
+<ul>
+<li>Multiple independent Grouping Options</li>
+</ul>
+<p><strong>Dimension Table</strong></p>
+<ul>
+<li>ID for classification Node</li>
+<li>Characteristic Attributes (Brand, Producer, Title, etc.)</li>
+<li>Foreign Key (for direct Parent Hierarchy Level)</li>
+</ul>
+<p><strong>Fact Table</strong></p>
+<ul>
+<li>Foreign Keys (referencing bottom-level Category of each Dimension)</li>
+<li>Set of all Foreign Keys (= <strong>Composite Primary Key</strong>)</li>
+</ul>
+<h3 id="star-schema">Star Schema<a class="headerlink" href="#star-schema" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Avoiding Joins over multiple Tables</li>
+<li>Denormalized Schema (Data Redundancy)</li>
+<li>One Dimension Table per Dimension</li>
+</ul>
+<p><a class="glightbox" href="../images/star-schema.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Star Schema" loading="lazy" src="../images/star-schema.png" /></a></p>
+<h3 id="snowflake-schema">Snowflake Schema<a class="headerlink" href="#snowflake-schema" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Mapping of Classification (seperate Tables for each Dimension/Level/Classification)</li>
+<li>Normalized Schema (avoiding Update Anomalies, Redundancy, etc.)</li>
+</ul>
+<p><a class="glightbox" href="../images/snowflake-schema.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Snowflake Schema" loading="lazy" src="../images/snowflake-schema.png" /></a></p>
+<h3 id="star-vs-snowflake-schema">Star vs Snowflake Schema<a class="headerlink" href="#star-vs-snowflake-schema" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Star Schema</th>
+<th>Snowflake Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Normalization &amp; Data Redundancy</strong></td>
+<td>denromalized, redundant Data in Dim Tables</td>
+<td>fully normalized Dim Tables</td>
+</tr>
+<tr>
+<td><strong>Query Complexity</strong></td>
+<td>simple Queries</td>
+<td>complex Queries</td>
+</tr>
+<tr>
+<td><strong>Query Performance</strong></td>
+<td>faster</td>
+<td>slower</td>
+</tr>
+<tr>
+<td><strong>Disk Space</strong></td>
+<td>more Storage</td>
+<td>less Storage</td>
+</tr>
+<tr>
+<td><strong>Data Integrity Issues</strong></td>
+<td>might occur</td>
+<td>less likely</td>
+</tr>
+<tr>
+<td><strong>Setup / Maintenance</strong></td>
+<td>easier Setup, harder Maintenance</td>
+<td>harder Setup, easier Maintenance</td>
+</tr>
+</tbody>
+</table>
 <h2 id="data-lake">Data Lake<a class="headerlink" href="#data-lake" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2724,14 +2880,76 @@
 <li>Netlogs (Source delivers Net Updates)</li>
 </ul>
 <h3 id="transform">Transform<a class="headerlink" href="#transform" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Data gets restructured to make it compliant for Data Warehouse (Data, Schema, etc.)</li>
+</ul>
 <h3 id="load">Load<a class="headerlink" href="#load" title="Permanent link">&para;</a></h3>
+<p><strong>Record Based Loading</strong></p>
+<ul>
+<li>Trigger, Indices and Constraints can remain active</li>
+<li>No long Table/DB Locks</li>
+</ul>
+<p><strong>Bulk Loading</strong></p>
+<ul>
+<li>Is used mostly for special Context</li>
+<li>Complete DB/Table Locks</li>
+<li>Ignores Triggers and Constraints checks</li>
+<li>Needs Checkpoints for Resuming</li>
+</ul>
 <h3 id="etl-vs-elt">ETL vs ELT<a class="headerlink" href="#etl-vs-elt" title="Permanent link">&para;</a></h3>
+<p><strong>ELT</strong> - Extract, Load, Transform: Variant of ETL, where Data is loaded into Data Warehouse first, and then transformed with SQL (similar like Data Lage with on-demand Processing)</p>
 <h2 id="profiling">Profiling<a class="headerlink" href="#profiling" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Content Analysis before Staging Area</p>
+</div>
+<p><strong>Content &amp; Structure Analysis</strong></p>
+<ul>
+<li>Data Types</li>
+<li>Value Ranges</li>
+<li>Distribution/Variance</li>
+<li>Null Values</li>
+<li>Cardinality</li>
+<li>Patterns (e.g. Dates, Names, etc.)</li>
+</ul>
+<p><strong>Dependencie Analysis</strong> Analysis betweend different Attributes and Relations</p>
+<ul>
+<li>Functional Dependencies (Primary Key Candidates)</li>
+<li>Integrity Constraints</li>
+</ul>
+<p><strong>Overlap Analysis</strong></p>
+<ul>
+<li>Redundancy</li>
+<li>Foreign Key Relationships</li>
+</ul>
 <h2 id="data-cleansing">Data Cleansing<a class="headerlink" href="#data-cleansing" title="Permanent link">&para;</a></h2>
-<h3 id="nan-values">Nan Values<a class="headerlink" href="#nan-values" title="Permanent link">&para;</a></h3>
-<h2 id="schemas">Schemas<a class="headerlink" href="#schemas" title="Permanent link">&para;</a></h2>
-<h3 id="star-schema">Star Schema<a class="headerlink" href="#star-schema" title="Permanent link">&para;</a></h3>
-<h3 id="snowflake-schema">Snowflake Schema<a class="headerlink" href="#snowflake-schema" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Cleaning, normalizing, tokenizing, discretizing, standardizing, etc. of the Data</p>
+</div>
+<p><strong>Normalization &amp; Standardization</strong></p>
+<ul>
+<li>Discretization (categorizing) numerical Values</li>
+<li>Domain specific Transformations (e.g. Adresses, Name Formats, St. to Street, etc.)</li>
+</ul>
+<h3 id="missing-values">Missing Values<a class="headerlink" href="#missing-values" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Treating Null Values, Distortions/Noisiness (Biases)</p>
+</div>
+<p><strong>Recognition</strong></p>
+<ul>
+<li>Simple Analysis (e.g. amount of Null Values, frequency, etc)</li>
+<li>Order Analysis (e.g. no Values in a specific Range)</li>
+<li>Multilated Data (e.g. ignoring Values in a specific Range)</li>
+<li>Recognition (e.g. Analysis of Data Distribution, Domain Knowledge, etc.)</li>
+</ul>
+<p><strong>Treatment</strong></p>
+<ul>
+<li>Unbiased Estimators (mean, median, standard deviation, etc.)</li>
+<li>Attribute Relationships (correlation, etc.)</li>
+<li>Statistical Techniques (linear regression, neural networks, etc.)</li>
+</ul>
 
   
 
@@ -2743,7 +2961,7 @@
         <span class="md-icon" title="Last update">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-06-07T07:25:20+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-06-07</span> 
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-06-08T13:55:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-06-08</span> 
     </span>
     <span class="md-source-file__fact">
         <span class="md-icon" title="Created">
@@ -2851,13 +3069,13 @@
         
         
           
-          <a href="../../prog2/oop/" class="md-footer__link md-footer__link--next" aria-label="Next: Object Oriented" rel="next">
+          <a href="../unstructured/" class="md-footer__link md-footer__link--next" aria-label="Next: Unstructured Data" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Object Oriented
+                Unstructured Data
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -168,10 +168,8 @@ nav:
 
     - Genral Notes:
           - git: general-notes/git.md
+          - Graphs: general-notes/graphs.md
           - MkDocs Material: general-notes/mkdocs-material.md
-
-    - Algo & DS:
-          - Graphs: algorithms/graphs.md
 
     - Python:
           - Pydantic:
@@ -218,7 +216,7 @@ nav:
           - Commands: coding/golang/commands.md
           - Data Types: coding/golang/types.md
 
-    - Data Science Study:
+    - BSc Study:
           - ds-study/index.md
           - Math:
                 - math/index.md

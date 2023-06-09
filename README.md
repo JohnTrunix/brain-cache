@@ -42,7 +42,15 @@ Only rebuild current page (faster, useful for big sites)
 mkdocs serve --dirtyreload
 ```
 
-### Building & Deploying
+### `scripts/dev.sh`
+
+Auto activate virtual environment and serve
+
+```bash
+source scripts/dev.sh
+```
+
+### Manual Building & Deploying
 
 ```bash
 mkdocs build

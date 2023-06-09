@@ -4,6 +4,8 @@ Welcome to JohnTrunix's Brain Cache, my personal go-to hub for tech-savvy person
 
 On this page, I document my acquired knowledge and store it as a personal library. You'll find various theoretical aspects, code documentation, and even side projects when I have the time and energy to work on them. This page is constantly being expanded.
 
+**Note: ** You can directly jump to the next site with ++period++ or back with ++comma++
+
 <br/>
 
 !!! note "Note"

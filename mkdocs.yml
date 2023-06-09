@@ -159,6 +159,7 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.mark
     - pymdownx.details
+    - pymdownx.keys
 
 nav:
     - Overview:
@@ -234,3 +235,7 @@ nav:
                 - Pandas: ds-study/prog2/pandas.md
                 - Internet Standars: ds-study/prog2/standards.md
                 - Sorting Algorithms: ds-study/prog2/sorting.md
+
+    - Blender:
+          - blender/index.md
+          - Shortcuts: blender/shortcuts.md

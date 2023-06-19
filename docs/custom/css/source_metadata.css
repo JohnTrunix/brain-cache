@@ -35,10 +35,6 @@
     float: left;
 }
 
-md-author::hover {
-    color: var(--md-primary-fg-color);
-}
-
 .md-typeset a.md-author {
     transform: scale(1);
 }
@@ -55,4 +51,16 @@ md-author::hover {
     position: relative;
     transition: color 125ms, transform 125ms;
     width: 1.6rem;
+}
+
+a.md-author img {
+    border-radius: 100%;
+    display: block;
+    filter: grayscale(100%) opacity(0.75);
+    transition: filter 125ms;
+}
+
+a.md-author img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%) opacity(1);
 }

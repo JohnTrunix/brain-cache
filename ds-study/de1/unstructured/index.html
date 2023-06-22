@@ -18,7 +18,7 @@
         <link rel="prev" href="../structured/">
       
       
-        <link rel="next" href="../../prog2/oop/">
+        <link rel="next" href="../bigdata/">
       
       <link rel="icon" href="../../../custom/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
@@ -175,7 +175,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#unstructured-data-for-ir-information-retrieval" class="md-skip">
+        <a href="#unstructured-data-for-information-retrieval" class="md-skip">
           Skip to content
         </a>
       
@@ -1726,6 +1726,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
@@ -1783,10 +1785,345 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Unstructured Data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Unstructured Data
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text-representations-in-ir" class="md-nav__link">
+    Text Representations in IR
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Representations in IR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unstructured-representation" class="md-nav__link">
+    Unstructured Representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weakly-structured-representation" class="md-nav__link">
+    Weakly-Structured Representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-representation" class="md-nav__link">
+    Structured Representation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-preprocessing" class="md-nav__link">
+    Text Preprocessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    Procedure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens-and-terms" class="md-nav__link">
+    Tokens and Terms
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokens and Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokenizationnormlization" class="md-nav__link">
+    Tokenization/Normlization
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokenization/Normlization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedure-normalization-1" class="md-nav__link">
+    Procedure Normalization 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expanding-queries" class="md-nav__link">
+    Expanding Queries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopword-removal-3-4" class="md-nav__link">
+    Stopword Removal 3 4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-retrieval" class="md-nav__link">
+    Boolean Retrieval
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Retrieval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#therm-document-incidence-matrix" class="md-nav__link">
+    Therm Document / Incidence Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverted-index" class="md-nav__link">
+    Inverted Index
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverted Index">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intersection-optimization" class="md-nav__link">
+    Intersection Optimization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ranked-retrieval" class="md-nav__link">
+    Ranked Retrieval
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranked Retrieval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-1" class="md-nav__link">
+    Ranking Principle 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-2" class="md-nav__link">
+    Ranking Principle 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-3" class="md-nav__link">
+    Ranking Principle 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-4" class="md-nav__link">
+    Ranking Principle 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-5" class="md-nav__link">
+    Ranking Principle 5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modified-ranking-index" class="md-nav__link">
+    Modified Ranking Index
+  </a>
+  
+    <nav class="md-nav" aria-label="Modified Ranking Index">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ranking-r1-r2-r3" class="md-nav__link">
+    Ranking (R1, R2, R3)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-r1-r2-r3-r4-r5" class="md-nav__link">
+    Ranking (R1, R2, R3, R4, R5)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-space-model" class="md-nav__link">
+    Vector Space Model
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Space Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#term-frequency-tf" class="md-nav__link">
+    Term Frequency (TF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-document-frequency-idf" class="md-nav__link">
+    Inverse Document Frequency (IDF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tf-idf" class="md-nav__link">
+    TF-IDF
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-processing-record-linkage" class="md-nav__link">
+    Data Processing / Record Linkage
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Processing / Record Linkage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-integration" class="md-nav__link">
+    Data Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#record-linkage" class="md-nav__link">
+    Record Linkage
+  </a>
+  
+    <nav class="md-nav" aria-label="Record Linkage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levenshtein-distance" class="md-nav__link">
+    Levenshtein Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bigdata/" class="md-nav__link">
+        Big Data
+      </a>
     </li>
   
 
@@ -2028,6 +2365,311 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text-representations-in-ir" class="md-nav__link">
+    Text Representations in IR
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Representations in IR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unstructured-representation" class="md-nav__link">
+    Unstructured Representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weakly-structured-representation" class="md-nav__link">
+    Weakly-Structured Representation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structured-representation" class="md-nav__link">
+    Structured Representation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-preprocessing" class="md-nav__link">
+    Text Preprocessing
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Preprocessing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    Procedure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokens-and-terms" class="md-nav__link">
+    Tokens and Terms
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokens and Terms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokenizationnormlization" class="md-nav__link">
+    Tokenization/Normlization
+  </a>
+  
+    <nav class="md-nav" aria-label="Tokenization/Normlization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#procedure-normalization-1" class="md-nav__link">
+    Procedure Normalization 1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expanding-queries" class="md-nav__link">
+    Expanding Queries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopword-removal-3-4" class="md-nav__link">
+    Stopword Removal 3 4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-retrieval" class="md-nav__link">
+    Boolean Retrieval
+  </a>
+  
+    <nav class="md-nav" aria-label="Boolean Retrieval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#therm-document-incidence-matrix" class="md-nav__link">
+    Therm Document / Incidence Matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverted-index" class="md-nav__link">
+    Inverted Index
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverted Index">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intersection-optimization" class="md-nav__link">
+    Intersection Optimization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ranked-retrieval" class="md-nav__link">
+    Ranked Retrieval
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranked Retrieval">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-1" class="md-nav__link">
+    Ranking Principle 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-2" class="md-nav__link">
+    Ranking Principle 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-3" class="md-nav__link">
+    Ranking Principle 3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-4" class="md-nav__link">
+    Ranking Principle 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-principle-5" class="md-nav__link">
+    Ranking Principle 5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modified-ranking-index" class="md-nav__link">
+    Modified Ranking Index
+  </a>
+  
+    <nav class="md-nav" aria-label="Modified Ranking Index">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ranking-r1-r2-r3" class="md-nav__link">
+    Ranking (R1, R2, R3)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ranking-r1-r2-r3-r4-r5" class="md-nav__link">
+    Ranking (R1, R2, R3, R4, R5)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-space-model" class="md-nav__link">
+    Vector Space Model
+  </a>
+  
+    <nav class="md-nav" aria-label="Vector Space Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#term-frequency-tf" class="md-nav__link">
+    Term Frequency (TF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-document-frequency-idf" class="md-nav__link">
+    Inverse Document Frequency (IDF)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tf-idf" class="md-nav__link">
+    TF-IDF
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-processing-record-linkage" class="md-nav__link">
+    Data Processing / Record Linkage
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Processing / Record Linkage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-integration" class="md-nav__link">
+    Data Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#record-linkage" class="md-nav__link">
+    Record Linkage
+  </a>
+  
+    <nav class="md-nav" aria-label="Record Linkage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levenshtein-distance" class="md-nav__link">
+    Levenshtein Distance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2055,7 +2697,600 @@
   
 
 
-<h1 id="unstructured-data-for-ir-information-retrieval">Unstructured Data for IR (Information Retrieval)<a class="headerlink" href="#unstructured-data-for-ir-information-retrieval" title="Permanent link">&para;</a></h1>
+<h1 id="unstructured-data-for-information-retrieval">Unstructured Data for Information Retrieval<a class="headerlink" href="#unstructured-data-for-information-retrieval" title="Permanent link">&para;</a></h1>
+<p><strong>Elements of information retrieval:</strong></p>
+<ul>
+<li>Information Needs (User Query)</li>
+<li>Information Resources (Documents)</li>
+<li>System that identifies Sources and indicates relevance</li>
+</ul>
+<h2 id="text-representations-in-ir">Text Representations in IR<a class="headerlink" href="#text-representations-in-ir" title="Permanent link">&para;</a></h2>
+<h3 id="unstructured-representation">Unstructured Representation<a class="headerlink" href="#unstructured-representation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Standart text representation</li>
+<li>Bag of words: unordered set of terms</li>
+<li>Good performance but not always relevant results</li>
+</ul>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p>“One evening Frodo and Sam were walking together in the
+cool twilight. Both of them felt restless again. On Frodo
+suddenly the shadow of parting had falling: the time to leave
+Lothlorien was near.”</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;one&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;evening&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;frodo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="err">...</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="weakly-structured-representation">Weakly-Structured Representation<a class="headerlink" href="#weakly-structured-representation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Some group of terms which are more important (e.g. Nouns, named entities)</li>
+<li>Other Terms: ignored or down-scaled</li>
+<li>Needs preprocessing: NLP (e.g. POS tagging: part-of-speech tagging to identify nouns)</li>
+</ul>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p>“One evening Frodo and Sam were walking together in the
+cool twilight. Both of them felt restless again. On Frodo
+suddenly the shadow of parting had falling: the time to leave
+Lothlorien was near.”</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="c1">// Count of Nouns</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;evening&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;frodo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sam&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;twilight&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;shadow&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;lothlorien&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">}</span>
+
+<span class="c1">// Count of Names in Nouns</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;frodo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sam&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="structured-representation">Structured Representation<a class="headerlink" href="#structured-representation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Graph with nodes and edges</li>
+<li>Describes relations between terms</li>
+</ul>
+<p><strong>Example:</strong></p>
+<blockquote>
+<p>“One evening Frodo and Sam were walking together in the
+cool twilight. Both of them felt restless again. On Frodo
+suddenly the shadow of parting had falling: the time to leave
+Lothlorien was near.”</p>
+</blockquote>
+<pre class="mermaid"><code>graph LR
+    F[Frodo] --&gt; w[walking]
+    S[Sam] --&gt; w
+    F --&gt; f[felt restless]
+    S --&gt; f
+    F --&gt; h[had falling]
+    F --&gt; l[leave]
+
+    l --&gt; lo[Lothlorien]
+    h --&gt; s[shadow]
+
+    w -- same time --&gt; f
+    f -- before --&gt; h
+    h -- before --&gt; l</code></pre>
+<h2 id="text-preprocessing">Text Preprocessing<a class="headerlink" href="#text-preprocessing" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Goal: Reduce Vocabulary Size: remove noise</p>
+</div>
+<ul>
+<li>How to split words?</li>
+<li>Remove filler words</li>
+<li>Handle differend verb forms, adjectives and nouns with the same stem</li>
+<li>Handle synonyms and similar concepts in other languages</li>
+<li>Different document types needs different preprocessing</li>
+</ul>
+<h3 id="procedure">Procedure<a class="headerlink" href="#procedure" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Extract plain text from document (e.g. <code>.txt</code>, <code>.pdf</code>, <code>.docx</code>, <code>.html</code>)</li>
+<li>Language detection</li>
+<li>Tokenization (split text to character sequences)</li>
+<li>Morphological Normalization (e.g. stemming, lemmatization)</li>
+<li>Stopwords Removal</li>
+<li>Indexing</li>
+</ol>
+<h2 id="tokens-and-terms">Tokens and Terms<a class="headerlink" href="#tokens-and-terms" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>word</strong></td>
+<td>string with characters</td>
+</tr>
+<tr>
+<td><strong>term</strong></td>
+<td>normalized form of word</td>
+</tr>
+<tr>
+<td><strong>token</strong></td>
+<td>instance of term in text</td>
+</tr>
+<tr>
+<td><strong>tokenization</strong></td>
+<td>process of splitting text into tokens</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tokenizationnormlization">Tokenization/Normlization<a class="headerlink" href="#tokenizationnormlization" title="Permanent link">&para;</a></h3>
+<p><strong>Methods:</strong></p>
+<ul>
+<li>Rule-based</li>
+<li>Supervised learning</li>
+</ul>
+<h4 id="procedure-normalization-1">Procedure Normalization <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup><a class="headerlink" href="#procedure-normalization-1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Error/Spelling correction</li>
+<li>Case folding: all characters to lowercase</li>
+<li>Morphological normalization: reducing different forms of the same word to a common word</li>
+<li>Inflectional normalization / Lemmatization: normalization of same words to the lexically correct base form</li>
+<li>Derivational normalization: normalization of word to the lexically correct base form (specialized)</li>
+<li>Stemming: normalization of word stem (e.g. "automates", "automated", "automatic" to "automat")<ul>
+<li>Porter Stemmer (algorithm which cuts off certain suffixes) <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+</ul>
+</li>
+</ul>
+<h3 id="expanding-queries">Expanding Queries<a class="headerlink" href="#expanding-queries" title="Permanent link">&para;</a></h3>
+<p>Theoretically very powerful but in practice inefficient because of indexing similar words.</p>
+<h3 id="stopword-removal-3-4">Stopword Removal <sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> <sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup><a class="headerlink" href="#stopword-removal-3-4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Stopwords: words which are very common and not relevant for IR</li>
+<li>Reduces vocabulary size</li>
+<li>Low significance</li>
+<li>Can match false positives</li>
+</ul>
+<h2 id="boolean-retrieval">Boolean Retrieval<a class="headerlink" href="#boolean-retrieval" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Method for matching documents against queries with boolean operators (AND, OR, NOT)</p>
+</div>
+<ul>
+<li>Inefficient because of large text, ignores spacing to words in sentence</li>
+</ul>
+<p><strong>Models:</strong></p>
+<ul>
+<li>Boolean Model (True/False)</li>
+<li>Algebraic Model (Vector Space Model)</li>
+<li>Probabilistic Model (Binary Independence Model)</li>
+<li>Semantic Model</li>
+</ul>
+<h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Query Text:</strong> representation of raw query</li>
+<li><strong>Documents:</strong> representation of raw documents</li>
+<li><strong>Function:</strong> maps relevant documents for query:<ul>
+<li><code>fd</code> maps document to representation (IR standard)</li>
+<li><code>fq</code> maps query to representation (IR standard)</li>
+<li><code>r</code> Ranking: calculates relevance of document for query</li>
+</ul>
+</li>
+</ul>
+<h3 id="therm-document-incidence-matrix">Therm Document / Incidence Matrix<a class="headerlink" href="#therm-document-incidence-matrix" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Good for small collections</li>
+<li>Dictionary: all terms in collections</li>
+<li>Vector: count of terms in document</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Document:</p>
+<blockquote>
+<p>One evening Frodo and Sam were walking together in the cool twilight.</p>
+</blockquote>
+<p>Dimension:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;one&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;evening&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;frodo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sam&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;walking&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;together&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cool&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;twilight&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;restless&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;shadow&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Vector:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+<h3 id="inverted-index">Inverted Index<a class="headerlink" href="#inverted-index" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Good for efficient handling</li>
+<li>Contains word and list of documents where word occurs</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>Document 1:</p>
+<blockquote>
+<p>One evening Frodo and Sam were walking together in the cool twilight.</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>Both of them felt restless again.</p>
+</blockquote>
+<p>Dimension:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;one&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;evening&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;frodo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;sam&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;walking&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;together&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;cool&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;twilight&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;restless&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Query <code>Sam AND Frodo</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="err">sam</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="kc">fr</span><span class="err">odo</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="err">sam</span><span class="w"> </span><span class="err">∩</span><span class="w"> </span><span class="kc">fr</span><span class="err">odo</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+<h4 id="intersection-optimization">Intersection Optimization<a class="headerlink" href="#intersection-optimization" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Intersection from small list to large list</li>
+<li>Sort index alphabetically</li>
+<li>Add Skip Pointers (Step size: <span class="arithmatex">\(\sqrt(N)\)</span>)</li>
+</ul>
+<pre class="mermaid"><code>graph LR
+
+Sam --&gt; 1 --&gt; 2 --&gt; 7 --&gt; 174 --&gt; 210 --&gt; 331 --&gt; 2046
+1 -- skip --&gt; 174 -- skip --&gt; 2046
+
+Frodo --&gt; f2[2] --&gt; 3 --&gt; 4 --&gt; f7[7] --&gt; 21 --&gt; 29 --&gt; 38 --&gt; 91 --&gt; 101 --&gt; 122 --&gt; 134 --&gt; 171 --&gt; 1137
+f2 -- skip --&gt; 21 -- skip --&gt; 134 -- skip --&gt; 1137
+</code></pre>
+<h2 id="ranked-retrieval">Ranked Retrieval<a class="headerlink" href="#ranked-retrieval" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Boolean retrieval returns only True/False for query. Ranked retrieval returns a ranking for each document.</p>
+</div>
+<h3 id="ranking-principle-1">Ranking Principle 1<a class="headerlink" href="#ranking-principle-1" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Relevance bei amount of unique query terms in document (count of unique query terms)</p>
+</div>
+<p><strong>Example Query:</strong> <code>earthquake epicentre richter scale</code></p>
+<p>Document 1:</p>
+<blockquote>
+<p>Yesterday there was an <strong>earthquake</strong> in China. The <strong>epicentre</strong> was 200 miles north of the capitol.
+The measurement on the <strong>richter scale</strong> was about ...</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>After the strong <strong>earhquake</strong> in 2020, the damages has been repaired really fast.
+The beautiful city Bolognese in Italy with its new mayor Andrea <strong>Richter</strong> currently experiences ...</p>
+</blockquote>
+<h3 id="ranking-principle-2">Ranking Principle 2<a class="headerlink" href="#ranking-principle-2" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Relevance by total amount of query terms in document (count of all query terms)</p>
+</div>
+<p><strong>Example Query:</strong> <code>earthquake richter</code></p>
+<p>Document 1:</p>
+<blockquote>
+<p>Yesterday there was an <strong>earthquake</strong> in China. The epicentre was 200 miles north of the capitol.
+The measurement on the <strong>richter scale</strong> was about 5.7. The duration of the <strong>earthquake</strong> was about 30 seconds.</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>After the strong <strong>earhquake</strong> in 2020, the damages has been repaired really fast.
+The beautiful city Bolognese in Italy with its new mayor Andrea <strong>Richter</strong> currently experiences ...</p>
+</blockquote>
+<h3 id="ranking-principle-3">Ranking Principle 3<a class="headerlink" href="#ranking-principle-3" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Relevance by rarity of occurence of query terms in document (focus: min. all query terms)</p>
+</div>
+<p><strong>Example Query:</strong> <code>earthquake bolognese</code></p>
+<p>Document 1:</p>
+<blockquote>
+<p>Yesterday there was an <strong>earthquake</strong> in China. The epicentre was 200 miles north of the capitol.
+The measurement on the <strong>richter scale</strong> was about 5.7. The duration of the <strong>earthquake</strong> was about 30 seconds.</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>After the strong <strong>earhquake</strong> in 2020, the damages has been repaired really fast.
+The beautiful city <strong>Bolognese</strong> in Italy with its new mayor Andrea Richter currently experiences ...</p>
+</blockquote>
+<h3 id="ranking-principle-4">Ranking Principle 4<a class="headerlink" href="#ranking-principle-4" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Relevance by distance of query terms to each other in document (how close are the query terms)</p>
+</div>
+<p><strong>Example Query:</strong> <code>Hans Meyer</code></p>
+<p>Document 1:</p>
+<blockquote>
+<p><strong>Hans Meyer</strong> elected as new president. Yesterday, <strong>Hans Meyer</strong> was elected as new president of ...</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p><strong>Hans</strong> Gfeller, Horst Peter, Markus <strong>Meyer</strong></p>
+</blockquote>
+<h3 id="ranking-principle-5">Ranking Principle 5<a class="headerlink" href="#ranking-principle-5" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Relevance by position of query terms in document (how early are the query terms in the document)</p>
+</div>
+<p><strong>Example Query:</strong> <code>Hans Meyer</code></p>
+<p>Document 1:</p>
+<blockquote>
+<p><strong>Hans Meyer</strong> elected as new president. Yesterday, <strong>Hans Meyer</strong> was elected as new president of ...</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>After the election of a new president, a lot of thins are updated. According to <strong>Hans Meyer</strong> there will be ...</p>
+</blockquote>
+<h3 id="modified-ranking-index">Modified Ranking Index<a class="headerlink" href="#modified-ranking-index" title="Permanent link">&para;</a></h3>
+<h4 id="ranking-r1-r2-r3">Ranking (R1, R2, R3)<a class="headerlink" href="#ranking-r1-r2-r3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>R1: Relevance by amount of unique query terms in document</li>
+<li>R2: Relevance by total amount of query terms in document</li>
+<li>R3: Relevance by rarity of occurence of query terms in document</li>
+</ul>
+<p><strong>Schema:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[[</span><span class="err">Docume</span><span class="kc">nt</span><span class="w"> </span><span class="err">Nr.</span><span class="p">,</span><span class="w"> </span><span class="err">Amou</span><span class="kc">nt</span><span class="w"> </span><span class="err">o</span><span class="kc">f</span><span class="w"> </span><span class="err">Occure</span><span class="kc">n</span><span class="err">ces</span><span class="p">],</span><span class="w"> </span><span class="err">...</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;example&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="ranking-r1-r2-r3-r4-r5">Ranking (R1, R2, R3, R4, R5)<a class="headerlink" href="#ranking-r1-r2-r3-r4-r5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>R1: Relevance by amount of unique query terms in document</li>
+<li>R2: Relevance by total amount of query terms in document</li>
+<li>R3: Relevance by rarity of occurence of query terms in document</li>
+<li>R4: Relevance by distance of query terms to each other in document</li>
+<li>R5: Relevance by position of query terms in document</li>
+</ul>
+<p><strong>Schema:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[[</span><span class="err">Docume</span><span class="kc">nt</span><span class="w"> </span><span class="err">Nr.</span><span class="p">,</span><span class="w"> </span><span class="err">Amou</span><span class="kc">nt</span><span class="w"> </span><span class="err">o</span><span class="kc">f</span><span class="w"> </span><span class="err">Occure</span><span class="kc">n</span><span class="err">ces</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="err">Posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="err">Posi</span><span class="kc">t</span><span class="err">io</span><span class="kc">n</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="err">...</span><span class="p">]],</span><span class="w"> </span><span class="err">...</span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;example&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">]],</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]]]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="vector-space-model">Vector Space Model<a class="headerlink" href="#vector-space-model" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Model for representing documents and queries as vectors in a multidimensional space. Similarity between documents is measured by the angle.</p>
+</div>
+<p><strong>Cosiine Similarity:</strong></p>
+<div class="arithmatex">\[
+\cos(\theta) = \frac{A \cdot B}{\|A\| \|B\|} = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2} \sqrt{\sum_{i=1}^{n} B_i^2}}
+\]</div>
+<p><strong>Example:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Document 1:</th>
+<th>Document 2:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frodo and Sam were walking together in the cool twilight.</td>
+<td>Frodo likes to walk in the evening.</td>
+</tr>
+</tbody>
+</table>
+<p>Dimension:</p>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s2">&quot;frodo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;sam&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;walk&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;together&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cool&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;twilight&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;like&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;evening&quot;</span><span class="p">]</span>
+</code></pre></div>
+<p>Vectors:</p>
+<div class="highlight"><pre><span></span><code><span class="err">D</span><span class="mi">1</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span>
+<span class="err">D</span><span class="mi">2</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+<p>Query: <code>sam twilight</code></p>
+<div class="highlight"><pre><span></span><code><span class="err">q</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+<p>Result:</p>
+<div class="highlight"><pre><span></span><code><span class="err">cos(D</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="err">q)</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mf">0.5</span>
+<span class="err">cos(D</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="err">q)</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">0</span>
+</code></pre></div>
+<h3 id="term-frequency-tf">Term Frequency (TF)<a class="headerlink" href="#term-frequency-tf" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Weighted term frequency in a document</p>
+</div>
+<div class="arithmatex">\[
+tf_{t,d} = \frac{\text{count of term t in document d}}{\text{total count of terms in document d}}
+\]</div>
+<p><strong>Example:</strong></p>
+<p>Document 1:</p>
+<blockquote>
+<p>One evening Frodo and Sam were walking together in the cool twilight.
+Both of them felt restless again. On Frodo suddenly the shadow of parting had falling:
+the time to leave Lothlorien was near. <strong>Total count: 34</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Count</th>
+<th>Term Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frodo</td>
+<td>2</td>
+<td><span class="arithmatex">\(tf(\text{Frodo}, d_1) = 2 / 34 = 0.0588\)</span></td>
+</tr>
+<tr>
+<td>Sam</td>
+<td>1</td>
+<td><span class="arithmatex">\(tf(\text{Sam}, d_1) = 1 / 34 = 0.0294\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="inverse-document-frequency-idf">Inverse Document Frequency (IDF)<a class="headerlink" href="#inverse-document-frequency-idf" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Importance of a term in all documents. High if term occurs in few documents.</p>
+</div>
+<div class="arithmatex">\[
+idf_{t} = \log \frac{\text{total count of documents}}{\text{count of documents with term t}}
+\]</div>
+<p><strong>Example:</strong></p>
+<p>Document 1:</p>
+<blockquote>
+<p>One evening Frodo and Sam were walking together in the cool twilight.</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>Both of them felt restless again.</p>
+</blockquote>
+<p>Document 3:</p>
+<blockquote>
+<p>On Frodo suddenly the shadow of parting had falling: the time to leave Lothlorien was near.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Count</th>
+<th>Inverse Document Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frodo</td>
+<td>2</td>
+<td><span class="arithmatex">\(\log(\frac{3}{2}) = 0.176\)</span></td>
+</tr>
+<tr>
+<td>Sam</td>
+<td>1</td>
+<td><span class="arithmatex">\(\log(\frac{3}{1}) = 0.477\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tf-idf">TF-IDF<a class="headerlink" href="#tf-idf" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Weighted term frequency in a document with importance of a term in all documents.</p>
+</div>
+<p><strong>High Value:</strong> Term occurs often in a document and rarely in other documents</p>
+<div class="arithmatex">\[
+tfidf_{t,d} = tf_{t,d} \cdot idf_{t}
+\]</div>
+<p><strong>Example:</strong></p>
+<p>Document 1:</p>
+<blockquote>
+<p>One evening Frodo and Sam were walking together in the cool twilight.</p>
+</blockquote>
+<p>Document 2:</p>
+<blockquote>
+<p>Both of them felt restless again.</p>
+</blockquote>
+<p>Document 3:</p>
+<blockquote>
+<p>On Frodo suddenly the shadow of parting had falling: the time to leave Lothlorien was near.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>TF</th>
+<th>IDF</th>
+<th>TF-IDF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frodo</td>
+<td><span class="arithmatex">\(2 / 34 = 0.0588\)</span></td>
+<td><span class="arithmatex">\(\log(\frac{3}{2}) = 0.176\)</span></td>
+<td>0.0006</td>
+</tr>
+<tr>
+<td>Sam</td>
+<td><span class="arithmatex">\(1 / 34 = 0.0294\)</span></td>
+<td><span class="arithmatex">\(\log(\frac{3}{1}) = 0.477\)</span></td>
+<td>0.0140</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-processing-record-linkage">Data Processing / Record Linkage<a class="headerlink" href="#data-processing-record-linkage" title="Permanent link">&para;</a></h2>
+<p><strong>Synonyms:</strong> Entity Resolution, Duplicate Detection, Coreference Resolution, Fuzzy Matching</p>
+<h3 id="data-integration">Data Integration<a class="headerlink" href="#data-integration" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Providing data that exists in several autonomous data resources</p>
+</blockquote>
+<h2 id="record-linkage">Record Linkage<a class="headerlink" href="#record-linkage" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Record linkage identifies records of the same entity by comparing identifiers and avoids duplicates.
+It is often used in data integration and marketing.</p>
+</div>
+<h3 id="levenshtein-distance">Levenshtein Distance<a class="headerlink" href="#levenshtein-distance" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Distance between two strings (e.g. words) by counting the minimum number of operations to transform one string to another.</p>
+</div>
+<p><strong>Costs:</strong></p>
+<p><a class="glightbox" href="../images/levenshtein_bsp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="left" alt="Levenshtein Distance Example" src="../images/levenshtein_bsp.png" width="50%;" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy Character</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Insert Character</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Delete Character</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Replace Character</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<p><strong>Procedure:</strong></p>
+<p><a class="glightbox" href="../images/levenshtein.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Levenshtein Distance" src="../images/levenshtein.png" /></a></p>
+<p><strong>Path:</strong> Backwards, smallest cost first than diagonal backwards</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><a href="https://pypi.org/project/compound-split/" target="_blank">https://pypi.org/project/compound-split/</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://snowball.tartarus.org/algorithms/porter/stemmer.html" target="_blank">https://snowball.tartarus.org/algorithms/porter/stemmer.html</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://www.ranks.nl/stopwords" target="_blank">https://www.ranks.nl/stopwords</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://www.nltk.org/" target="_blank">https://www.nltk.org/</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
   
 
@@ -2067,7 +3302,7 @@
         <span class="md-icon" title="Last update">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
         </span>
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-06-08T13:55:22+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-06-08</span> 
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2023-06-22T12:28:32+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2023-06-22</span> 
     </span>
     <span class="md-source-file__fact">
         <span class="md-icon" title="Created">
@@ -2175,13 +3410,13 @@
         
         
           
-          <a href="../../prog2/oop/" class="md-footer__link md-footer__link--next" aria-label="Next: Object Oriented" rel="next">
+          <a href="../bigdata/" class="md-footer__link md-footer__link--next" aria-label="Next: Big Data" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Object Oriented
+                Big Data
               </div>
             </div>
             <div class="md-footer__button md-icon">

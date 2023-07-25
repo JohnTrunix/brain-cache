@@ -1,4 +1,4 @@
-# HTML
+# HTML :simple-html5:
 
 !!! note
 

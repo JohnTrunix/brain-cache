@@ -1,4 +1,4 @@
-# Graphs
+# Graphs :material-graph:
 
 Graphs are a data structures which represent a set of nodes and edges connecting them. They are used to represent relationships between objects. Graphs are used in many fields, such as social networks, transportation networks, and computer networks.
 

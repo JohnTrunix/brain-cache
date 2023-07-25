@@ -3,7 +3,7 @@ hide:
     - toc
 ---
 
-# Angular
+# Angular :simple-angular:
 
 Angular[^1] is a framework for building client applications in HTML, CSS and TypeScript.
 

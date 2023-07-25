@@ -1,4 +1,4 @@
-# Python FastAPI
+# Python FastAPI :simple-fastapi:
 
 FastAPI[^1] is a modern, fast (high-performance), web framework for building APIs.
 

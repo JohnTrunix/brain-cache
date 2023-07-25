@@ -168,9 +168,14 @@ nav:
           - Links & Resources: overview/urls-resources.md
 
     - Genral Notes:
-          - git: general-notes/git.md
-          - Graphs: general-notes/graphs.md
-          - MkDocs Material: general-notes/mkdocs-material.md
+          - Git: general/git.md
+          - Docker Topics:
+                - Docker: general/docker/docker.md
+                - Docker Compose: general/docker/docker-compose.md
+
+          - Other:
+                - Graphs: general/graphs.md
+                - MkDocs Material: general/mkdocs-material.md
 
     - Python:
           - Pydantic:
@@ -236,7 +241,3 @@ nav:
                 - Pandas: ds-study/prog2/pandas.md
                 - Internet Standars: ds-study/prog2/standards.md
                 - Sorting Algorithms: ds-study/prog2/sorting.md
-
-    - Blender:
-          - blender/index.md
-          - Shortcuts: blender/shortcuts.md

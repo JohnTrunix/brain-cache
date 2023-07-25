@@ -4,12 +4,12 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ## Elements `docker-compose.yml`
 
--   [Version](https://docs.docker.com/compose/compose-file/compose-versioning/)
--   [Services](https://docs.docker.com/compose/compose-file/05-services/)
--   [Networks](https://docs.docker.com/compose/compose-file/06-networks/)
--   [Volumes](https://docs.docker.com/compose/compose-file/07-volumes/)
--   [Configurations](https://docs.docker.com/compose/compose-file/08-configs/)
--   [Secrets](https://docs.docker.com/compose/compose-file/09-secrets/)
+-   [Version](https://docs.docker.com/compose/compose-file/compose-versioning/){target=\_blank}
+-   [Services](https://docs.docker.com/compose/compose-file/05-services/){target=\_blank}
+-   [Networks](https://docs.docker.com/compose/compose-file/06-networks/){target=\_blank}
+-   [Volumes](https://docs.docker.com/compose/compose-file/07-volumes/){target=\_blank}
+-   [Configurations](https://docs.docker.com/compose/compose-file/08-configs/){target=\_blank}
+-   [Secrets](https://docs.docker.com/compose/compose-file/09-secrets/){target=\_blank}
 
 ## File Structure
 
@@ -99,5 +99,5 @@ docker-compose down
 ```
 
 [^1]:
-    [https://www.educative.io/blog/docker-compose-tutorial](https://www.educative.io/blog/docker-compose-tutorial)
+    [https://www.educative.io/blog/docker-compose-tutorial](https://www.educative.io/blog/docker-compose-tutorial){target=\_blank}
     c

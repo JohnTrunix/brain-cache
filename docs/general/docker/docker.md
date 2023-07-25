@@ -281,6 +281,6 @@ To avoid this, you can create a `.dockerignore` file in the root of the project 
 env
 ```
 
-[^1]: [https://www.redhat.com/en/topics/containers/what-is-docker](https://www.redhat.com/en/topics/containers/what-is-docker)
-[^2]: [https://docs.docker.com/engine/reference/commandline/container_run/](https://docs.docker.com/engine/reference/commandline/container_run/)
-[^3]: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+[^1]: [https://www.redhat.com/en/topics/containers/what-is-docker](https://www.redhat.com/en/topics/containers/what-is-docker){target=\_blank}
+[^2]: [https://docs.docker.com/engine/reference/commandline/container_run/](https://docs.docker.com/engine/reference/commandline/container_run/){target=\_blank}
+[^3]: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/){target=\_blank}

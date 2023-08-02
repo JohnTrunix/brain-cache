@@ -98,6 +98,4 @@ This command stops the containers for the services defined in the `docker-compos
 docker-compose down
 ```
 
-[^1]:
-    [https://www.educative.io/blog/docker-compose-tutorial](https://www.educative.io/blog/docker-compose-tutorial){target=\_blank}
-    c
+[^1]: [https://www.educative.io/blog/docker-compose-tutorial](https://www.educative.io/blog/docker-compose-tutorial){target=\_blank}

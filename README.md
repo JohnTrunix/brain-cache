@@ -30,6 +30,8 @@ pip install -r requirements.txt
 -   [Documentation Social Cards](https://squidfunk.github.io/mkdocs-material/setup/setting-up-social-cards/)
 -   [GTK Release](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases)
 
+**Note:** As a windows user, you can simply install Gimp and add the bin folder to your PATH (_`C:\Program Files\GIMP 2\bin`_). This will resolve the dependency issue.
+
 ### Serving
 
 ```bash
@@ -42,7 +44,7 @@ Only rebuild current page (faster, useful for big sites)
 mkdocs serve --dirtyreload
 ```
 
-### `scripts/dev.sh`
+### scripts/dev.sh
 
 Auto activate virtual environment and serve
 

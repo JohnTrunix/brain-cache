@@ -225,11 +225,17 @@ nav:
                 - Arrays & Slices: coding/golang/arrays.md
                 - Maps: coding/golang/maps.md
                 - Pointers: coding/golang/pointers.md
-          #- Loops and Conditionals:
+          - Loops and Conditionals:
+                - If else: coding/golang/if-else.md
+                - Switch: coding/golang/switch.md
+                - For Loops: coding/golang/for-loops.md
+                - Defer: coding/golang/defer.md
           - Functions and Structs:
                 - Functions: coding/golang/functions.md
                 - Structs: coding/golang/structs.md
                 - Interfaces: coding/golang/interfaces.md
+          #- Concurrency:
+          #- Errors and Testing:
 
     - BSc Study:
           - ds-study/index.md

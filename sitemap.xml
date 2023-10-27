@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/python/builtin/</loc>
+         <lastmod>2023-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://johntrunix.github.io/brain-cache/coding/python/builtin/abc/</loc>
          <lastmod>2023-10-27</lastmod>
          <changefreq>daily</changefreq>
@@ -97,11 +102,6 @@
     </url>
     <url>
          <loc>https://johntrunix.github.io/brain-cache/coding/python/pickle/</loc>
-         <lastmod>2023-10-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://johntrunix.github.io/brain-cache/coding/python/pydantic/</loc>
          <lastmod>2023-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>

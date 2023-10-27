@@ -183,7 +183,7 @@ nav:
           - BuiltIn Modules:
                 - coding/python/builtin/index.md
                 - abc: coding/python/builtin/abc.md
-                #- argparse: coding/python/builtin/argparse.md
+                - argparse: coding/python/builtin/argparse.md
                 #- asyncio: coding/python/builtin/asyncio.md
                 #- base64: coding/python/builtin/base64.md
                 #- cmath: coding/python/builtin/cmath.md

@@ -58,10 +58,12 @@ theme:
 
     features:
         - navigation.instant
+        - navigation.instant.progress
         - navigation.tracking
         - navigation.tabs
-        - navigation.sections
-        - navigation.expand
+        - navigation.tabs.sticky
+        # - navigation.sections
+        # - navigation.expand
         - navigation.indexes
         - navigation.top
         - navigation.footer
@@ -142,8 +144,8 @@ markdown_extensions:
     - pymdownx.arithmatex:
           generic: true
     - pymdownx.emoji:
-          emoji_index: !!python/name:materialx.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
     - pymdownx.superfences:
           custom_fences:
               - name: mermaid
@@ -178,8 +180,10 @@ nav:
                 - MkDocs Material: general/mkdocs-material.md
 
     - Python:
-          - Pydantic:
-                - coding/python/pydantic/index.md
+          - BuiltIn Modules:
+                - coding/python/builtin/index.md
+                - abc: coding/python/builtin/abc.md
+
           - FastAPI:
                 - coding/python/fastapi/index.md
                 - Parameter: coding/python/fastapi/parameter.md

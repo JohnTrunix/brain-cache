@@ -2,7 +2,7 @@
 
 This are my personal notes for the bachelor's degree program Data Science at ZHAW. Many notes were integrated in other subpages of this website. This page is just a bucket for standalone notes.
 
-!!! tip "Looking for my math notes? See my $\small\LaTeX$ Notes [here](../math)."
+!!! tip "Looking for my math notes? See my $\small\LaTeX$ Notes [here](../math/index.md)."
 
 ## Courses
 

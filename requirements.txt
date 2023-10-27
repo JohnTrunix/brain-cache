@@ -1,4 +1,5 @@
 mkdocs-material
+mkdocs-material[imaging]
 
 # mkdocs material plugins and their dependencies
 mkdocs-glightbox

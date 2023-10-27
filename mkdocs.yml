@@ -183,6 +183,34 @@ nav:
           - BuiltIn Modules:
                 - coding/python/builtin/index.md
                 - abc: coding/python/builtin/abc.md
+                #- argparse: coding/python/builtin/argparse.md
+                #- asyncio: coding/python/builtin/asyncio.md
+                #- base64: coding/python/builtin/base64.md
+                #- cmath: coding/python/builtin/cmath.md
+                #- collections: coding/python/builtin/collections.md
+                #- dataclasses: coding/python/builtin/dataclasses.md
+                #- enum: coding/python/builtin/enum.md
+                #- gc: coding/python/builtin/gc.md
+                #- hashlib: coding/python/builtin/hashlib.md
+                #- html: coding/python/builtin/html.md
+                #- io: coding/python/builtin/io.md
+                #- json: coding/python/builtin/json.md
+                #- logging: coding/python/builtin/logging.md
+                #- math: coding/python/builtin/math.md
+                #- multiprocessing: coding/python/builtin/multiprocessing.md
+                #- os: coding/python/builtin/os.md
+                #- pathlib: coding/python/builtin/pathlib.md
+                #- queue: coding/python/builtin/queue.md
+                #- random: coding/python/builtin/random.md
+                #- socket: coding/python/builtin/socket.md
+                #- sys: coding/python/builtin/sys.md
+                #- threading: coding/python/builtin/threading.md
+                #- types: coding/python/builtin/types.md
+                #- typing: coding/python/builtin/typing.md
+                #- urllib: coding/python/builtin/urllib.md
+                #- uuid: coding/python/builtin/uuid.md
+                #- venv: coding/python/builtin/venv.md
+                #- xml: coding/python/builtin/xml.md
 
           - FastAPI:
                 - coding/python/fastapi/index.md

@@ -8,7 +8,7 @@ icon: material/console
 
     The `argparse` module enables the parsing of command line arguments.
 
-[Python `argparse` Documentation :material-file-document-arrow-right-outline:](https://docs.python.org/3/library/argparse.html){ .md-button target="\_blank"}
+-   [`argparse` Documentation :material-file-document-arrow-right-outline:](https://docs.python.org/3/library/argparse.html){target="\_blank"}
 
 **Example Usage**
 

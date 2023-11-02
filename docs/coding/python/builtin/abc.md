@@ -8,7 +8,7 @@ icon: material/alphabetical-variant
 
     Abstract base classes are standardized way to define interfaces in Python. They are used to define a minimal set of methods that a class must implement in order to be considered a duck type of the abstract base class.
 
-[Python `abc` Documentation :material-file-document-arrow-right-outline:](https://docs.python.org/3/library/abc.html){ .md-button target="\_blank"}
+-   [`abc` Documentation :material-file-document-arrow-right-outline:](https://docs.python.org/3/library/abc.html){target="\_blank"}
 
 ## Abstract Base Class Usage
 

@@ -1,15 +1,19 @@
+---
+icon: fontawesome/brands/octopus-deploy
+---
+
 # Docker Compose
 
 Docker Compose is a tool for defining and running multi-container Docker applications. Information describing the services and networks for an application are contained within a YAML file, called docker-compose.yml. [^1]
 
 ## Elements `docker-compose.yml`
 
--   [Version](https://docs.docker.com/compose/compose-file/compose-versioning/){target=\_blank}
--   [Services](https://docs.docker.com/compose/compose-file/05-services/){target=\_blank}
--   [Networks](https://docs.docker.com/compose/compose-file/06-networks/){target=\_blank}
--   [Volumes](https://docs.docker.com/compose/compose-file/07-volumes/){target=\_blank}
--   [Configurations](https://docs.docker.com/compose/compose-file/08-configs/){target=\_blank}
--   [Secrets](https://docs.docker.com/compose/compose-file/09-secrets/){target=\_blank}
+- [Version](https://docs.docker.com/compose/compose-file/compose-versioning/){target=\_blank}
+- [Services](https://docs.docker.com/compose/compose-file/05-services/){target=\_blank}
+- [Networks](https://docs.docker.com/compose/compose-file/06-networks/){target=\_blank}
+- [Volumes](https://docs.docker.com/compose/compose-file/07-volumes/){target=\_blank}
+- [Configurations](https://docs.docker.com/compose/compose-file/08-configs/){target=\_blank}
+- [Secrets](https://docs.docker.com/compose/compose-file/09-secrets/){target=\_blank}
 
 ## File Structure
 
@@ -17,43 +21,43 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 version: "x.x"
 
 services:
-    <service-name-1>:
-        build: <path-to-dockerfile>
-        ports:
-            - "<host-port>:<container-port>"
-        volumes:
-            - "<host-path>:<container-path>"
-        networks:
-            - <network-name-1>
+  <service-name-1>:
+    build: <path-to-dockerfile>
+    ports:
+      - "<host-port>:<container-port>"
+    volumes:
+      - "<host-path>:<container-path>"
+    networks:
+      - <network-name-1>
 
-    <service-name-2>:
-        image: <image-name>
-        ports:
-            - "<host-port>:<container-port>"
-        volumes:
-            - "<host-path>:<container-path>"
-        depends_on:
-            - <service-name-1>
-        networks:
-            - <network-name-1>
-            - <network-name-2>
+  <service-name-2>:
+    image: <image-name>
+    ports:
+      - "<host-port>:<container-port>"
+    volumes:
+      - "<host-path>:<container-path>"
+    depends_on:
+      - <service-name-1>
+    networks:
+      - <network-name-1>
+      - <network-name-2>
 
-    <database-service-name>:
-        image: <image-name>
-        ports:
-            - "<host-port>:<container-port>"
-        volumes:
-            - "<host-path>:<container-path>"
-        environment:
-            - POSTGRES_USER=<username>
-            - POSTGRES_PASSWORD=<password>
-            - POSTGRES_DB=<database-name>
-        networks:
-            - <network-name-2>
+  <database-service-name>:
+    image: <image-name>
+    ports:
+      - "<host-port>:<container-port>"
+    volumes:
+      - "<host-path>:<container-path>"
+    environment:
+      - POSTGRES_USER=<username>
+      - POSTGRES_PASSWORD=<password>
+      - POSTGRES_DB=<database-name>
+    networks:
+      - <network-name-2>
 
 networks:
-    <network-name-1>:
-    <network-name-2>:
+  <network-name-1>:
+  <network-name-2>:
 ```
 
 ## Commands

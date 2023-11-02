@@ -1,3 +1,7 @@
+---
+icon: material/book
+---
+
 # MkDocs Material :simple-markdown:
 
 Is a theme for MkDocs that provides a clean and responsive design. It is based on the Material Design guidelines by Google. MkDocs is a static site generator that is geared towards building project documentation. It is written in Python and uses Markdown to create pages.

@@ -1,3 +1,7 @@
+---
+icon: material/docker
+---
+
 # Docker :simple-docker:
 
 Docker is a containerization platform that allows you to run applications in a sandboxed environment. This means that you can run applications in a container without having to worry about the dependencies and libraries that the application needs to run.
@@ -34,8 +38,8 @@ Executes a command in a running container with a shell.
 docker exec -it <container> \bin\bash
 ```
 
--   `-i` flag is used for interactive mode
--   `-t` flag is used to enable terminal typing
+- `-i` flag is used for interactive mode
+- `-t` flag is used to enable terminal typing
 
 Executes a command in a running container without a shell.
 
@@ -51,19 +55,19 @@ Builds an image from a `Dockerfile`.
 docker build .
 ```
 
--   `.` is the root of the project (build context)
+- `.` is the root of the project (build context)
 
--   `-f` flag is used to specify an alternative `Dockerfile`:
+- `-f` flag is used to specify an alternative `Dockerfile`:
 
-    ```bash
-    docker build -f Dockerfile.dev .
-    ```
+  ```bash
+  docker build -f Dockerfile.dev .
+  ```
 
--   `-t` flag is used to tag the image with a name:
+- `-t` flag is used to tag the image with a name:
 
-    ```bash
-    docker build -t myimage .
-    ```
+  ```bash
+  docker build -t myimage .
+  ```
 
 ### Run Docker Container
 
@@ -73,11 +77,11 @@ Runs a container from an image. [^2]
 docker run <image>
 ```
 
--   `<image>` can be identified by the tagname or the image id
--   `-d` flag is used to run the container in detached mode
--   `-rm` flag is used to remove the container after it exits
--   `-p <host-port>:<container-port>` flag is used to publish a container's port to the host
--   `-v <host-path>:<container-path>` flag is used to mount a volume from the host to the container (manually)
+- `<image>` can be identified by the tagname or the image id
+- `-d` flag is used to run the container in detached mode
+- `-rm` flag is used to remove the container after it exits
+- `-p <host-port>:<container-port>` flag is used to publish a container's port to the host
+- `-v <host-path>:<container-path>` flag is used to mount a volume from the host to the container (manually)
 
 ## Dockerfile
 
@@ -249,8 +253,8 @@ RUN pip install -r requirements.txt
 
 You want to run a container for `dev` and `prod` environments. The only differences are:
 
--   `dev` environment should run the application with hot-reload enabled: `--reload`
--   `prod` environment should run the application with an production flag: `--prod`
+- `dev` environment should run the application with hot-reload enabled: `--reload`
+- `prod` environment should run the application with an production flag: `--prod`
 
 ```dockerfile
 FROM python:3.8

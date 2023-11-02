@@ -171,10 +171,14 @@ nav:
 
     - Genral Notes:
           - Git: general/git.md
+          - LaTeX:
+                - general/latex/index.md
+                - Elements: general/latex/elements.md
+                - Math: general/latex/math.md
+                - Plots: general/latex/plots.md
           - Docker Topics:
                 - Docker: general/docker/docker.md
                 - Docker Compose: general/docker/docker-compose.md
-
           - Other:
                 - Graphs: general/graphs.md
                 - MkDocs Material: general/mkdocs-material.md
@@ -189,7 +193,7 @@ nav:
                 #- cmath: coding/python/builtin/cmath.md
                 #- collections: coding/python/builtin/collections.md
                 #- dataclasses: coding/python/builtin/dataclasses.md
-                #- enum: coding/python/builtin/enum.md
+                - enum: coding/python/builtin/enum.md
                 #- gc: coding/python/builtin/gc.md
                 #- hashlib: coding/python/builtin/hashlib.md
                 #- html: coding/python/builtin/html.md

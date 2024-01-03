@@ -109,7 +109,7 @@ extra:
                   note: >-
                       Sorry to hear that. Can you give me some suggestions for improvement?
 
-copyright: Copyright &copy; 2023 JohnTrunix
+copyright: Copyright &copy; 2024 JohnTrunix
 
 plugins:
     - social:
@@ -272,6 +272,9 @@ nav:
                 - Interfaces: coding/golang/interfaces.md
           #- Concurrency:
           #- Errors and Testing:
+
+    #- Java:
+    #- coding/java/index.md
 
     - BSc Study:
           - ds-study/index.md

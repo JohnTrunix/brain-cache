@@ -273,8 +273,8 @@ nav:
           #- Concurrency:
           #- Errors and Testing:
 
-    #- Java:
-    #- coding/java/index.md
+    - Java:
+          - coding/java/index.md
 
     - BSc Study:
           - ds-study/index.md

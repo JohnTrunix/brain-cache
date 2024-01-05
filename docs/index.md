@@ -6,6 +6,62 @@ On this page, I document my acquired knowledge and store it as a personal librar
 
 **Note:** You can directly jump to the next site with ++n++ or back with ++p++
 
+## Shortcuts
+
+<div class="grid cards" markdown>
+
+-   :material-docker:{ .lg .middle } **Docker & Docker Compose**
+
+    ***
+
+    Docker is a tool that allows you to run applications in containers.
+
+    [:octicons-arrow-right-24: Docker Notes](general/docker/docker.md)
+
+-   :material-text:{ .lg .middle } **LaTeX**
+
+    ***
+
+    LaTeX is used to create documents such as research papers, books, slides, and more.
+
+    [:octicons-arrow-right-24: LaTeX Notes](general/latex/index.md)
+
+-   :material-package:{ .lg .middle } **Python InBuilt Packages**
+
+    ***
+
+    Notes about some inbuilt packages in Python
+
+    [:octicons-arrow-right-24: Python Packages Notes](coding/python/builtin/index.md)
+
+-   :material-angular:{ .lg .middle } **Angular**
+
+    ***
+
+    Angular is a TypeScript-based web application framework.
+
+    [:octicons-arrow-right-24: Angular Notes](webdev/angular/index.md)
+
+-   :material-math-integral:{ .lg .middle } **Math**
+
+    ***
+
+    Personal notes about math, written in LaTeX.
+
+    [:octicons-arrow-right-24: Math Notes](math/index.md)
+
+-   :material-bug:{ .lg .middle } **Code Snippets**
+
+    ***
+
+    Something missing? Create an issue on GitHub!
+
+    [:octicons-arrow-right-24: Github Issue](https://github.com/JohnTrunix/brain-cache/issues/new?assignees=JohnTrunix&labels=documentation%2C+enhancement&projects=&template=topic-request-suggestion.md&title=%5B+Topic+Request+%5D){target=\_blank}
+
+</div>
+
+---
+
 <br/>
 
 !!! note "Note"

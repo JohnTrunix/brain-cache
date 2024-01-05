@@ -1,11 +1,6 @@
----
-hide:
-    - toc
----
-
 # Math
 
-<div class="grid cards" markdown>
+<div class="grid cards single-row" markdown>
 
 -   :material-file-outline:{ .lg .middle } [General Notes](general.md)
 

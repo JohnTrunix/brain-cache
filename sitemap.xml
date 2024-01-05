@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://johntrunix.github.io/brain-cache/coding/java/</loc>
+         <lastmod>2024-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://johntrunix.github.io/brain-cache/coding/python/builtin/</loc>
          <lastmod>2024-01-05</lastmod>
          <changefreq>daily</changefreq>

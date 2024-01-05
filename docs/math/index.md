@@ -5,11 +5,15 @@ hide:
 
 # Math
 
-This section contains a collection of my personal math notes written in `LaTeX` (downloadable as a PDF).
+<div class="grid cards" markdown>
 
--   [General](general.md)
--   [Linear Algebra](linear-algebra.md)
--   [Analysis](analysis.md)
+-   :material-file-outline:{ .lg .middle } [General Notes](general.md)
+
+-   :material-file-outline:{ .lg .middle } [Linear Algebra Notes](linear-algebra.md)
+
+-   :material-file-outline:{ .lg .middle } [Analysis Notes](analysis.md)
+
+</div>
 
 <br>
 

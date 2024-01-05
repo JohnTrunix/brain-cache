@@ -1,4 +1,4 @@
-mkdocs-material
+mkdocs-material~=9.5.3
 mkdocs-material[imaging]
 
 # mkdocs material plugins and their dependencies

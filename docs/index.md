@@ -60,9 +60,7 @@ On this page, I document my acquired knowledge and store it as a personal librar
 
 </div>
 
----
-
-<br/>
+<br />
 
 !!! note "Note"
 

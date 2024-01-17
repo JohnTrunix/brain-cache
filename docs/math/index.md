@@ -8,6 +8,8 @@
 
 -   :material-file-outline:{ .lg .middle } [Analysis Notes](analysis.md)
 
+-   :material-calculator:{ .lg .middle } [Calculator Scripts](calculator-scripts.md)
+
 </div>
 
 <br>

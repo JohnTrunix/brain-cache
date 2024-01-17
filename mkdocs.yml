@@ -283,6 +283,7 @@ nav:
                 - General: math/general.md
                 - Linear Algebra: math/linear-algebra.md
                 - Analysis: math/analysis.md
+                - Calculator Scripts: math/calculator-scripts.md
           - Data Engineering 1:
                 - RegEx: ds-study/de1/regex.md
                 - Structured Data: ds-study/de1/structured.md
